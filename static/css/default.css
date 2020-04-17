@@ -1,0 +1,115 @@
+h1, h2, h3, h4, h5, h6 {
+	font-family: Verdana, Helvetica, sans-serif;
+    line-height: 130%;
+}
+
+.subtitle {
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size: 1.3em;
+    font-weight: bold;
+    line-height: 100%;
+}
+
+.section-header-box {
+	background: lavender;
+	border-radius: 4px;
+	font-size: 100%;
+	margin: 0 auto;
+	max-width: 1000px;
+	padding: 1em;
+	text-align: center;
+}
+html {background: aliceblue;}
+body {
+	font-family: Times New Roman, serif;
+	font-size: 120%;
+	line-height: 130%;
+}
+
+p {
+	margin-top: 0.6em;
+	margin-bottom: 0.4em;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+/* Logo */
+img.logo {
+	width: 20%;
+	height: auto;
+}
+
+.logo-text {
+	font-family: Bookman Antiqua, serif;
+	font-size: 300%;
+	margin: 0 auto;
+	max-width: 80%;
+}
+
+/* Notation and chess diagrams */
+.mainline {
+	font-family: FigurineSymbol, Times New Roman, serif;
+	font-weight: bold;
+}
+
+.fen-diag {
+	align-items: center;
+}
+
+.fen-diag-cnv-wrapper {
+	max-width: 90%;
+	height: 450px;
+	width: 450px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+figcaption {
+	font-style: italic;
+	text-align: center;
+}
+
+/* To handle embedded lichess iframes*/
+iframe[src*="lichess"] {
+	border: none;
+	max-width: 90%;
+	width: 800px;
+	height: 495px;
+}
+
+/* navbar */
+nav {
+	background: midnightblue;
+	border-radius: 4px;
+	display: block;
+	line-height: 100%;
+	margin: 0 auto;
+	padding-left: 10%;
+}
+
+.navbar li {
+	background: midnightblue;
+	display: inline-block;
+    margin: 0;
+	padding: 0;
+}
+
+.navbar a {
+	color: white;
+	display: block;
+    height: 100%;
+	line-height: 100%;
+    margin: 0;
+	padding: 1em;
+	text-decoration: none;
+}
+.navbar a:link { color: white; }
+.navbar a:visited { ; }
+.navbar a:focus { color: yellow; }
+.navbar a:hover { background: midnightblue; color: darkorange; }
+.navbar a:active { color: orange; }

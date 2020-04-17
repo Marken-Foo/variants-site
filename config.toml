@@ -1,0 +1,38 @@
+baseURL = "/"
+languageCode = "en-us"
+title = "TheChessPolyglot"
+copyright = "Illion 2020"
+
+[params]
+    author = "Illion"
+	footer = "&copy; [Illion](https://lichess.org/@/Illion) 2017-2020 | Theme by [Marken Foo](https://github.com/Marken-Foo/atom-site)"
+
+[permalinks]
+    post = "/:year/:month/:day/:slug/"
+	timeless = "/:slug/"
+	
+[taxonomies]
+    variant = "variants"
+	category = "categories"
+	tag = "tags"
+	
+[[menu.main]]
+    name = "Home"
+	url = "/"
+	weight = 1
+[[menu.main]]
+    name = "About"
+	url = "/about/"
+	weight = 2
+[[menu.main]]
+    name = "Variants"
+	url = "/variants/"
+	weight = 4
+[[menu.main]]
+	name = "Tags"
+	url = "/tags/"
+	weight = 5
+[[menu.main]]
+    name = "Links"
+	url = "/links/"
+	weight = 6
