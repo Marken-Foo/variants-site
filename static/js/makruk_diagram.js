@@ -1,24 +1,20 @@
-fen_diagram = (function(){
+makruk_diagram = (function(){
     // CONFIG: Piece image directory path and filenames.
-    const imgPath = "/../images/pieces/western/";
-    let pieceSrcs = {"P" : "wP.svg", "N" : "wN.svg", "B" : "wB.svg",
-                     "R" : "wR.svg", "Q" : "wQ.svg", "K" : "wK.svg",
-                     "p" : "bP.svg", "n" : "bN.svg", "b" : "bB.svg",
-                     "r" : "bR.svg", "q" : "bQ.svg", "k" : "bK.svg"};
+    const imgPath = "/../images/pieces/makruk/";
+    let pieceSrcs = {"P" : "wP.svg", "N" : "wN.svg", "S" : "wB.svg",
+                     "R" : "wR.svg", "M" : "wQ.svg", "K" : "wK.svg",
+                     "~M" : "wF.svg",
+                     "p" : "bP.svg", "n" : "bN.svg", "s" : "bB.svg",
+                     "r" : "bR.svg", "m" : "bQ.svg", "k" : "bK.svg",
+                     "~m" : "bF.svg"};
     // CONFIG: Colour themes for board.
-    const BROWN = new Theme(light="rgb(240, 217, 181)",
-                            dark="rgb(181, 136, 99)",
-                            border="rgb(128, 80, 64)");
-    const GREY = new Theme(light="rgb(166, 166, 166)",
-                           dark="rgb(134, 134, 134)",
-                           border="rgb(94, 94, 94)");
-    const STEEL = new Theme(light="rgb(222, 227, 230)",
-                           dark="rgb(140, 162, 173)",
-                           border="rgb(78, 110, 126)");
+    const BROWN = new Theme(base="rgb(255, 173, 74)",
+                            lines="rgb(0, 0, 0)",
+                            border="rgb(181, 136, 99)");
     const DEFAULT_THEME = BROWN;
-    const VARIATION_THEME = STEEL;
+    const VARIATION_THEME = BROWN;
     // CONFIG: Class name of divs to draw in.
-    const containerClass = "diag-western-cnv-wrapper";
+    const containerClass = "diag-makruk-cnv-wrapper";
     
     // list of FEN characters recognised
     const pieceChars = Object.keys(pieceSrcs);
@@ -39,6 +35,7 @@ fen_diagram = (function(){
             window.onload = loadImages(diagDivs);
         }
     }
+    
     // CONFIG: main() is called back when images are loaded.
     function main(diagDivs) {
         for (let div of diagDivs) {
@@ -93,12 +90,12 @@ fen_diagram = (function(){
     
 
     function drawDiagram(canvas, fen, flip=false, theme=DEFAULT_THEME) {
-        /** Draws a chess position (given by the FEN) on the given canvas.
+        /** Draws a makruk position (given by the FEN) on the given canvas.
             Board can be flipped to be from black's perspective.
         **/
         // These settings determine the colour and internal sizing of the board.
-        const colourLight = theme.light;
-        const colourDark = theme.dark;
+        const colourBase = theme.base;
+        const colourLines = theme.lines;
         const colourBorder = theme.border;
         const boardSize = Math.min(canvas.width, canvas.height);
         const borderSqRatio = 0.5; // border size in terms of square size
@@ -114,17 +111,16 @@ fen_diagram = (function(){
         ctx.translate(borderSize, borderSize);
         // canvas origin should now be at corner of main 8x8 area
         
-        // Draw board squares.
-        ctx.fillStyle = colourDark;
+        // Fill board colour and draw square borders.
+        ctx.fillStyle = colourBase;
         ctx.fillRect(0, 0, sqSize * 8, sqSize * 8);
-        ctx.fillStyle = colourLight;
-        for (let x = 0; x < 4; ++x) {
-            for (let y = 0; y < 4; ++y) {
-                ctx.fillRect((2 * x) * sqSize, (2 * y) * sqSize,
-                             sqSize, sqSize);
-                ctx.fillRect((2 * x + 1) * sqSize, (2 * y + 1) * sqSize,
-                             sqSize, sqSize);
-            }
+        ctx.strokeStyle = colourLines;
+        ctx.lineWidth = 2.0;
+        for (let i = 0; i <= 8; ++i) {
+            ctx.moveTo(sqSize * i, 0);
+            ctx.lineTo(sqSize * i, sqSize * 8);
+            ctx.moveTo(0, sqSize * i);
+            ctx.lineTo(sqSize * 8, sqSize * i);
         }
         
         // Add coordinates.
@@ -136,10 +132,10 @@ fen_diagram = (function(){
             let rowChar = flip ? i + 1 : 8 - i;
             let colChar = flip ? String.fromCharCode("h".charCodeAt(0) - i)
                                : String.fromCharCode("a".charCodeAt(0) + i);
-            ctx.fillStyle = (i & 1) ? colourLight : colourDark;
+            ctx.fillStyle = colourLines;
             ctx.fillText(rowChar, sqSize * sqInnerPad,
                          sqSize * (i + 4 * sqInnerPad));
-            ctx.fillStyle = !(i & 1) ? colourLight : colourDark;
+            ctx.fillStyle = colourLines;
             ctx.fillText(colChar, sqSize * (i + sqInnerPad),
                          sqSize * (8 - sqInnerPad));
         }
@@ -155,7 +151,6 @@ fen_diagram = (function(){
         }
         
         // Draw ornaments (board orientation, side to move).
-        // TODO: add castling rights/ep rights indicators.
         const ornSize = borderSize * 0.6 // diameter or width of ornaments
         
         ctx.restore(); // canvas origin should now be at corner of border
@@ -207,18 +202,18 @@ fen_diagram = (function(){
         let fenParts = fen.split(" ");
         this.ranks = fenParts[0].split("/");
         this.sideToMove = (typeof fenParts[1] !== "undefined")
-                          ? fenParts[1]
-                          : null;
+                           ? fenParts[1]
+                           : null;
         this.castling = (typeof fenParts[2] !== "undefined")
-                        ? fenParts[2].split("")
-                        : null;
+                         ? fenParts[2].split("")
+                         : null;
         this.ep = (typeof fenParts[3] !== "undefined") ? fenParts[3] : null;
         this.halfmove = (typeof fenParts[4] !== "undefined")
-                        ? fenParts[4]
-                        : null;
+                         ? fenParts[4]
+                         : null;
         this.fullmove = (typeof fenParts[5] !== "undefined")
-                        ? fenParts[5]
-                        : null;
+                         ? fenParts[5]
+                         : null;
     }
 
     // Fen.parseRank and Fen.parseRanks generate arrays to help draw pieces
@@ -229,17 +224,23 @@ fen_diagram = (function(){
          **/
         let rankUnits = [];
         let fileNum = 0;
-        
-        if (flip) { fenRank = fenRank.split("").reverse().join(""); }
-        
-        for (let ch of fenRank) {
-            if (pieceChars.includes(ch)) {
-                rankUnits.push([ch, fileNum]);
+        for (let i = 0; i < fenRank.length; ++i) {
+            let symbol = fenRank[i];
+            if (fenRank[i] === "~") {
+                // Assumes next character exists and will be "m" or "M"
+                symbol = "~" + fenRank[i+1];
+                rankUnits.push([symbol, fileNum]);
+                ++i; // ate two characters
+                ++fileNum;
+            }
+            if (pieceChars.includes(symbol)) {
+                rankUnits.push([symbol, fileNum]);
                 ++fileNum;
             } else {
-                fileNum += Number(ch); // ASSUMES FEN IS VALID
+                fileNum += Number(symbol); // ASSUMES FEN IS VALID
             }
         }
+        if (flip) { rankUnits.reverse(); }
         return rankUnits;
     };
 
@@ -257,9 +258,9 @@ fen_diagram = (function(){
     }
 
     // Colour theme parameters for drawing board. Light/dark squares and border.
-    function Theme(light, dark, border) {
-        this.light = light;
-        this.dark = dark;
+    function Theme(base, lines, border) {
+        this.base = base;
+        this.lines = lines;
         this.border = border;
     }
     
@@ -273,4 +274,4 @@ fen_diagram = (function(){
     };
 })();
 
-fen_diagram.generateDiagrams();
+makruk_diagram.generateDiagrams();

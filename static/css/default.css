@@ -19,7 +19,11 @@ h1, h2, h3, h4, h5, h6 {
 	padding: 1em;
 	text-align: center;
 }
-html {background: aliceblue;}
+
+html {
+    background: aliceblue;
+}
+
 body {
 	font-family: Times New Roman, serif;
 	font-size: 120%;
@@ -38,33 +42,34 @@ main {
 	margin: 0 auto;
 }
 
-/* Logo */
-img.logo {
-	width: 20%;
-	height: auto;
-}
-
-.logo-text {
-	font-family: Bookman Antiqua, serif;
-	font-size: 300%;
-	margin: 0 auto;
-	max-width: 80%;
-}
-
-/* Notation and chess diagrams */
+/* Notation */
 .mainline {
 	font-family: FigurineSymbol, Times New Roman, serif;
 	font-weight: bold;
 }
 
-.fen-diag {
+/* Western chess diagrams */
+.diag-western {
 	align-items: center;
 }
 
-.fen-diag-cnv-wrapper {
-	max-width: 90%;
-	height: 450px;
-	width: 450px;
+.diag-western-cnv-wrapper {
+	width: 60%;
+	height: 0;
+    padding-bottom: 60%; /* Trick to get height = width */
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* Makruk diagrams */
+.diag-makruk {
+    align-items: center;
+}
+
+.diag-makruk-cnv-wrapper {
+	width: 60%;
+	height: 0;
+    padding-bottom: 60%; /* Trick to get height = width */
 	margin-left: auto;
 	margin-right: auto;
 }
