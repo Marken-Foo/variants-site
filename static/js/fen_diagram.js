@@ -1,4 +1,6 @@
-fen_diagram = (function(){
+"use strict";
+
+let fen_diagram = (function(){
     // CONFIG: Piece image directory path and filenames.
     const imgPath = "/../images/pieces/western/";
     let pieceSrcs = {"P" : "wP.svg", "N" : "wN.svg", "B" : "wB.svg",
@@ -6,15 +8,15 @@ fen_diagram = (function(){
                      "p" : "bP.svg", "n" : "bN.svg", "b" : "bB.svg",
                      "r" : "bR.svg", "q" : "bQ.svg", "k" : "bK.svg"};
     // CONFIG: Colour themes for board.
-    const BROWN = new Theme(light="rgb(240, 217, 181)",
-                            dark="rgb(181, 136, 99)",
-                            border="rgb(128, 80, 64)");
-    const GREY = new Theme(light="rgb(166, 166, 166)",
-                           dark="rgb(134, 134, 134)",
-                           border="rgb(94, 94, 94)");
-    const STEEL = new Theme(light="rgb(222, 227, 230)",
-                           dark="rgb(140, 162, 173)",
-                           border="rgb(78, 110, 126)");
+    const BROWN = new Theme("rgb(240, 217, 181)",
+                            "rgb(181, 136, 99)",
+                            "rgb(128, 80, 64)");
+    const GREY = new Theme("rgb(166, 166, 166)",
+                           "rgb(134, 134, 134)",
+                           "rgb(94, 94, 94)");
+    const STEEL = new Theme("rgb(222, 227, 230)",
+                            "rgb(140, 162, 173)",
+                            "rgb(78, 110, 126)");
     const DEFAULT_THEME = BROWN;
     const VARIATION_THEME = STEEL;
     // CONFIG: Class name of divs to draw in.
@@ -27,7 +29,7 @@ fen_diagram = (function(){
         pieceSrcs[key] = imgPath + pieceSrcs[key];
         pieceImgs[key] = new Image();
     }
-    numImgs = pieceChars.length;
+    let numImgs = pieceChars.length;
 
 
     //=== Run the script only if there are diagrams to draw ===
@@ -36,7 +38,7 @@ fen_diagram = (function(){
         let diagDivs = Array.from(document.getElementsByClassName(
                                   containerClass));
         if (diagDivs.length > 0) {
-            window.onload = loadImages(diagDivs);
+            window.addEventListener("load", loadImages(diagDivs));
         }
     }
     // CONFIG: main() is called back when images are loaded.
@@ -248,7 +250,7 @@ fen_diagram = (function(){
         Returns array of rankUnits, from 7th to 0th rank (standard FEN order).
         Output rank order is reversed if called with flip=true.
         **/
-        units = [];
+        let units = [];
         for (let fenRank of this.ranks) {
             units.push(Fen.prototype.parseRank(fenRank, flip));
         }
@@ -265,11 +267,7 @@ fen_diagram = (function(){
     
     
     return {
-        generateDiagrams: generateDiagrams,
-        loadImages: loadImages,
-        Theme: Theme,
-        Fen: Fen,
-        drawDiagram: drawDiagram
+        generateDiagrams: generateDiagrams
     };
 })();
 

@@ -1,4 +1,6 @@
-makruk_diagram = (function(){
+"use strict";
+
+let makruk_diagram = (function(){
     // CONFIG: Piece image directory path and filenames.
     const imgPath = "/../images/pieces/makruk/";
     let pieceSrcs = {"P" : "wP.svg", "N" : "wN.svg", "S" : "wB.svg",
@@ -8,9 +10,9 @@ makruk_diagram = (function(){
                      "r" : "bR.svg", "m" : "bQ.svg", "k" : "bK.svg",
                      "~m" : "bF.svg"};
     // CONFIG: Colour themes for board.
-    const BROWN = new Theme(base="rgb(255, 173, 74)",
-                            lines="rgb(0, 0, 0)",
-                            border="rgb(181, 136, 99)");
+    const BROWN = new Theme("rgb(255, 173, 74)",
+                            "rgb(0, 0, 0)",
+                            "rgb(255, 166, 88)");
     const DEFAULT_THEME = BROWN;
     const VARIATION_THEME = BROWN;
     // CONFIG: Class name of divs to draw in.
@@ -23,7 +25,7 @@ makruk_diagram = (function(){
         pieceSrcs[key] = imgPath + pieceSrcs[key];
         pieceImgs[key] = new Image();
     }
-    numImgs = pieceChars.length;
+    let numImgs = pieceChars.length;
 
 
     //=== Run the script only if there are diagrams to draw ===
@@ -32,7 +34,7 @@ makruk_diagram = (function(){
         let diagDivs = Array.from(document.getElementsByClassName(
                                   containerClass));
         if (diagDivs.length > 0) {
-            window.onload = loadImages(diagDivs);
+            window.addEventListener("load", loadImages(diagDivs));
         }
     }
     
@@ -115,13 +117,17 @@ makruk_diagram = (function(){
         ctx.fillStyle = colourBase;
         ctx.fillRect(0, 0, sqSize * 8, sqSize * 8);
         ctx.strokeStyle = colourLines;
-        ctx.lineWidth = 2.0;
+        ctx.lineWidth = 1.0;
+        
+        ctx.beginPath();
         for (let i = 0; i <= 8; ++i) {
             ctx.moveTo(sqSize * i, 0);
             ctx.lineTo(sqSize * i, sqSize * 8);
             ctx.moveTo(0, sqSize * i);
             ctx.lineTo(sqSize * 8, sqSize * i);
         }
+        ctx.closePath();
+        ctx.stroke();
         
         // Add coordinates.
         const sqInnerPad = 0.05;
@@ -249,7 +255,7 @@ makruk_diagram = (function(){
         Returns array of rankUnits, from 7th to 0th rank (standard FEN order).
         Output rank order is reversed if called with flip=true.
         **/
-        units = [];
+        let units = [];
         for (let fenRank of this.ranks) {
             units.push(Fen.prototype.parseRank(fenRank, flip));
         }
@@ -266,11 +272,7 @@ makruk_diagram = (function(){
     
     
     return {
-        generateDiagrams: generateDiagrams,
-        loadImages: loadImages,
-        Theme: Theme,
-        Fen: Fen,
-        drawDiagram: drawDiagram
+        generateDiagrams: generateDiagrams
     };
 })();
 
