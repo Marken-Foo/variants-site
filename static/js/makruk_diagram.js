@@ -5,10 +5,10 @@ let makruk_diagram = (function(){
     const imgPath = "/../images/pieces/makruk/";
     let pieceSrcs = {"P" : "wP.svg", "N" : "wN.svg", "S" : "wB.svg",
                      "R" : "wR.svg", "M" : "wQ.svg", "K" : "wK.svg",
-                     "~M" : "wF.svg",
+                     "M~" : "wF.svg",
                      "p" : "bP.svg", "n" : "bN.svg", "s" : "bB.svg",
                      "r" : "bR.svg", "m" : "bQ.svg", "k" : "bK.svg",
-                     "~m" : "bF.svg"};
+                     "m~" : "bF.svg"};
     // CONFIG: Colour themes for board.
     const BROWN = new Theme("rgb(255, 173, 74)",
                             "rgb(0, 0, 0)",
@@ -232,12 +232,14 @@ let makruk_diagram = (function(){
         let fileNum = 0;
         for (let i = 0; i < fenRank.length; ++i) {
             let symbol = fenRank[i];
-            if (fenRank[i] === "~") {
-                // Assumes next character exists and will be "m" or "M"
-                symbol = "~" + fenRank[i+1];
+            if (fenRank[i] === "M" || fenRank[i] === "m") {
+                if (fenRank[i+1] === "~") {
+                    symbol = fenRank[i] + "~";
+                    ++i; // ate two characters
+                }
                 rankUnits.push([symbol, fileNum]);
-                ++i; // ate two characters
                 ++fileNum;
+                continue;
             }
             if (pieceChars.includes(symbol)) {
                 rankUnits.push([symbol, fileNum]);
