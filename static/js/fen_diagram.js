@@ -1,13 +1,15 @@
 "use strict";
 
 let fen_diagram = (function(){
-    // CONFIG: Piece image directory path and filenames.
+    // === CONFIGURATION OPTIONS ===
+    
+    // Piece image directory path, and FEN symbol-filename pairs.
     const imgPath = "/../images/pieces/western/";
     let pieceSrcs = {"P" : "wP.svg", "N" : "wN.svg", "B" : "wB.svg",
                      "R" : "wR.svg", "Q" : "wQ.svg", "K" : "wK.svg",
                      "p" : "bP.svg", "n" : "bN.svg", "b" : "bB.svg",
                      "r" : "bR.svg", "q" : "bQ.svg", "k" : "bK.svg"};
-    // CONFIG: Colour themes for board.
+    // Colour themes for board.
     const BROWN = new Theme("rgb(240, 217, 181)",
                             "rgb(181, 136, 99)",
                             "rgb(128, 80, 64)");
@@ -19,20 +21,20 @@ let fen_diagram = (function(){
                             "rgb(78, 110, 126)");
     const DEFAULT_THEME = BROWN;
     const VARIATION_THEME = STEEL;
-    // CONFIG: Class name of divs to draw in.
+    // Class name of <div>s to draw in.
     const containerClass = "diag-western-cnv-wrapper";
     
-    // list of FEN characters recognised
+    // === END OF CONFIGURATION OPTIONS ===
+    
+    // Module variables
     const pieceChars = Object.keys(pieceSrcs);
     let pieceImgs = {};
     for (let key of pieceChars) {
         pieceSrcs[key] = imgPath + pieceSrcs[key];
         pieceImgs[key] = new Image();
     }
-    let numImgs = pieceChars.length;
-
-
-    //=== Run the script only if there are diagrams to draw ===
+    
+    // === Run the script only if there are diagrams to draw ===
     // Array.from(list) is for Microsoft Edge compatibility
     function generateDiagrams() {
         let diagDivs = Array.from(document.getElementsByClassName(
@@ -41,31 +43,13 @@ let fen_diagram = (function(){
             window.addEventListener("load", loadImages(diagDivs));
         }
     }
-    // CONFIG: main() is called back when images are loaded.
-    function main(diagDivs) {
-        for (let div of diagDivs) {
-            // could optimise later because reflow when calling scrollWidth/Height
-            // Size calculation must be before putting the canvas in.
-            let cnvSize = Math.min(div.scrollWidth, div.scrollHeight);
-            let cnv = document.createElement("canvas");
-            let flip = div.dataset.hasOwnProperty("flip");
-            div.appendChild(cnv);
-            cnv.width = cnvSize;
-            cnv.height = cnvSize;
-            let theme = (div.dataset.diagType === "variation")
-                        ? VARIATION_THEME
-                        : DEFAULT_THEME;
-            drawDiagram(cnv, div.dataset.fen, flip=flip, theme=theme);
-        }
-    }
-
-    // =========== Class and function definitions ==============
-
+    
     function loadImages(diagDivs) {
         return function() {
             /** Loads images used to draw chess position.
             Calls back main() function when all images are successfully loaded.
             **/
+            let numImgs = pieceChars.length;
             let numImgsLoaded = 0;
             let numImgsError = 0;
             
@@ -93,7 +77,24 @@ let fen_diagram = (function(){
         }
     }
     
-
+    // main() is called back when images are loaded.
+    function main(diagDivs) {
+        for (let div of diagDivs) {
+            // could optimise later because reflow when calling scrollWidth/Height
+            // Size calculation must be before putting the canvas in.
+            let cnvSize = Math.min(div.scrollWidth, div.scrollHeight);
+            let cnv = document.createElement("canvas");
+            let flip = div.dataset.hasOwnProperty("flip");
+            div.appendChild(cnv);
+            cnv.width = cnvSize;
+            cnv.height = cnvSize;
+            let theme = (div.dataset.diagType === "variation")
+                        ? VARIATION_THEME
+                        : DEFAULT_THEME;
+            drawDiagram(cnv, div.dataset.fen, flip=flip, theme=theme);
+        }
+    }
+    
     function drawDiagram(canvas, fen, flip=false, theme=DEFAULT_THEME) {
         /** Draws a chess position (given by the FEN) on the given canvas.
             Board can be flipped to be from black's perspective.
@@ -148,7 +149,7 @@ let fen_diagram = (function(){
         
         // Draw pieces.
         let unitArray = fenObj.parseRanks(flip);
-        for (let i = 0; i < 8; ++i) {
+        for (let i = 0; i < unitArray.length; ++i) {
             for (let pair of unitArray[i]) {
                 let pieceImg = pieceImgs[pair[0]];
                 ctx.drawImage(pieceImg, sqSize * pair[1], sqSize * i,
@@ -201,7 +202,6 @@ let fen_diagram = (function(){
         return;
     }
     
-
     function Fen(fen) {
         /** FEN object. Abstract representation of a FEN string.
         **/
@@ -244,7 +244,7 @@ let fen_diagram = (function(){
         }
         return rankUnits;
     };
-
+    
     Fen.prototype.parseRanks = function(flip = false) {
         /** Calls Fen.prototype.parseRank() on each rank of the FEN.
         Returns array of rankUnits, from 7th to 0th rank (standard FEN order).
@@ -257,7 +257,7 @@ let fen_diagram = (function(){
         if (flip) { units.reverse(); }
         return units;
     }
-
+    
     // Colour theme parameters for drawing board. Light/dark squares and border.
     function Theme(light, dark, border) {
         this.light = light;

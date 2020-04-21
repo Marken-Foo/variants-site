@@ -1,24 +1,26 @@
 "use strict";
 
-let makruk_diagram = (function(){
+let xiangqi_diagram = (function(){
     // === CONFIGURATION OPTIONS ===
     
     // Piece image directory path, and FEN symbol-filename pairs.
-    const imgPath = "/../images/pieces/makruk/";
-    let pieceSrcs = {"P" : "wP.svg", "N" : "wN.svg", "S" : "wB.svg",
-                     "R" : "wR.svg", "M" : "wQ.svg", "K" : "wK.svg",
-                     "M~" : "wF.svg",
-                     "p" : "bP.svg", "n" : "bN.svg", "s" : "bB.svg",
-                     "r" : "bR.svg", "m" : "bQ.svg", "k" : "bK.svg",
-                     "m~" : "bF.svg"};
+    const imgPath = "/../images/pieces/xiangqi/red_black/";
+    let pieceSrcs = {"P" : "rP.svg", "N" : "rN.svg", "B" : "rE.svg",
+                     "R" : "rR.svg", "A" : "rA.svg", "K" : "rK.svg",
+                     "C" : "rC.svg",
+                     "p" : "bP.svg", "n" : "bN.svg", "b" : "bE.svg",
+                     "r" : "bR.svg", "a" : "bA.svg", "k" : "bK.svg",
+                     "c" : "bC.svg"};
+    const isBoardImg = 1; // set to 0 for canvas board (not implemented yet), 1 if using image
+    const boardSrc = "/../images/boards/xiangqiWood.png";
     // Colour themes for board.
-    const ORANGE = new Theme("rgb(255, 173, 74)",
+    const WOOD = new Theme("rgb(255, 173, 74)",
                             "rgb(0, 0, 0)",
-                            "rgb(255, 166, 88)");
-    const DEFAULT_THEME = ORANGE;
-    const VARIATION_THEME = ORANGE;
+                            "rgb(120, 67, 32)");
+    const DEFAULT_THEME = WOOD;
+    const VARIATION_THEME = WOOD;
     // Class name of <div>s to draw in.
-    const containerClass = "diag-makruk-cnv-wrapper";
+    const containerClass = "diag-xiangqi-cnv-wrapper";
     
     // === END OF CONFIGURATION OPTIONS ===
     
@@ -29,6 +31,7 @@ let makruk_diagram = (function(){
         pieceSrcs[key] = imgPath + pieceSrcs[key];
         pieceImgs[key] = new Image();
     }
+    let boardImg = new Image();
     
     //=== Run the script only if there are diagrams to draw ===
     // Array.from(list) is for Microsoft Edge compatibility
@@ -45,10 +48,12 @@ let makruk_diagram = (function(){
             /** Loads images used to draw chess position.
             Calls back main() function when all images are successfully loaded.
             **/
-            let numImgs = pieceChars.length;
+            let numImgs = pieceChars.length + isBoardImg;
             let numImgsLoaded = 0;
             let numImgsError = 0;
             
+            boardImg.onload = onloadCallback;
+            boardImg.src = boardSrc;
             for (let key of pieceChars) {
                 pieceImgs[key].onload = onloadCallback;
                 pieceImgs[key].onerror = onerrorCallback;
@@ -78,12 +83,20 @@ let makruk_diagram = (function(){
         for (let div of diagDivs) {
             // could optimise later because reflow when calling scrollWidth/Height
             // Size calculation must be before putting the canvas in.
-            let cnvSize = Math.min(div.scrollWidth, div.scrollHeight);
+            let scrollWidth = div.scrollWidth;
+            let scrollHeight = div.scrollHeight;
+            let cnvSize = 0;
+            // dimensions based on 9x10 "square" xiangqi board
+            if (scrollWidth / 9 < scrollHeight / 10) {
+                cnvSize = scrollWidth / 9;
+            } else {
+                cnvSize = scrollHeight / 10
+            }
             let cnv = document.createElement("canvas");
             let flip = div.dataset.hasOwnProperty("flip");
             div.appendChild(cnv);
-            cnv.width = cnvSize;
-            cnv.height = cnvSize;
+            cnv.width = cnvSize * 9;
+            cnv.height = cnvSize * 10;
             let theme = (div.dataset.diagType === "variation")
                         ? VARIATION_THEME
                         : DEFAULT_THEME;
@@ -92,59 +105,31 @@ let makruk_diagram = (function(){
     }
     
     function drawDiagram(canvas, fen, flip=false, theme=DEFAULT_THEME) {
-        /** Draws a makruk position (given by the FEN) on the given canvas.
+        /** Draws a xiangqi position (given by the FEN) on the given canvas.
             Board can be flipped to be from black's perspective.
         **/
+        // TODO: redo the board border and stuff
         // These settings determine the colour and internal sizing of the board.
         const colourBase = theme.base;
         const colourLines = theme.lines;
         const colourBorder = theme.border;
-        const boardSize = Math.min(canvas.width, canvas.height);
+        const boardWidth = canvas.width;
+        const boardHeight = canvas.height;
         const borderSqRatio = 0.5; // border size in terms of square size
-        const sqSize = boardSize / (8 + 2 * borderSqRatio);
+        const sqSize = boardWidth / (9 + 2 * borderSqRatio);
         const borderSize = borderSqRatio * sqSize;
         
         let fenObj = new Fen(fen);
         let ctx = canvas.getContext("2d");
         
         ctx.fillStyle = colourBorder;
-        ctx.fillRect(0, 0, boardSize, boardSize);
+        ctx.fillRect(0, 0, boardWidth, boardHeight);
         ctx.save();
         ctx.translate(borderSize, borderSize);
         // canvas origin should now be at corner of main 8x8 area
         
-        // Fill board colour and draw square borders.
-        ctx.fillStyle = colourBase;
-        ctx.fillRect(0, 0, sqSize * 8, sqSize * 8);
-        ctx.strokeStyle = colourLines;
-        ctx.lineWidth = 1.0;
-        
-        ctx.beginPath();
-        for (let i = 0; i <= 8; ++i) {
-            ctx.moveTo(sqSize * i, 0);
-            ctx.lineTo(sqSize * i, sqSize * 8);
-            ctx.moveTo(0, sqSize * i);
-            ctx.lineTo(sqSize * 8, sqSize * i);
-        }
-        ctx.closePath();
-        ctx.stroke();
-        
-        // Add coordinates.
-        const sqInnerPad = 0.05;
-        const sqFontSize = sqSize / 5;
-        
-        ctx.font = String(sqFontSize) + "px Calibri";
-        for (let i = 0; i < 8; ++i) {
-            let rowChar = flip ? i + 1 : 8 - i;
-            let colChar = flip ? String.fromCharCode("h".charCodeAt(0) - i)
-                               : String.fromCharCode("a".charCodeAt(0) + i);
-            ctx.fillStyle = colourLines;
-            ctx.fillText(rowChar, sqSize * sqInnerPad,
-                         sqSize * (i + 4 * sqInnerPad));
-            ctx.fillStyle = colourLines;
-            ctx.fillText(colChar, sqSize * (i + sqInnerPad),
-                         sqSize * (8 - sqInnerPad));
-        }
+        // Draw board from image.
+        ctx.drawImage(boardImg, 0, 0, sqSize * 9, sqSize * 10)
         
         // Draw pieces.
         let unitArray = fenObj.parseRanks(flip);
@@ -157,17 +142,17 @@ let makruk_diagram = (function(){
         }
         
         // Draw ornaments (board orientation, side to move).
-        const ornSize = borderSize * 0.6 // diameter or width of ornaments
-        
         ctx.restore(); // canvas origin should now be at corner of border
+        
+        const ornSize = borderSize * 0.6 // diameter or width of ornaments
         ctx.strokeStyle = "black";
         ctx.lineWidth = 1.0;
         
         // board orientation (white/black side) indicator
-        const x_apex = boardSize - borderSize * 0.5;
-        const y_apex = boardSize - borderSize - 4 * sqSize;
+        const x_apex = boardWidth - borderSize * 0.5;
+        const y_apex = boardHeight - borderSize - 5 * sqSize;
         
-        ctx.fillStyle = (flip) ? "black" : "white";
+        ctx.fillStyle = (flip) ? "black" : "red";
         ctx.beginPath(); //up-pointing triangle (middle-right of board, lower)
         ctx.moveTo(x_apex, y_apex);
         ctx.lineTo(x_apex - ornSize/2, y_apex + ornSize * Math.sqrt(3)/2);
@@ -175,7 +160,7 @@ let makruk_diagram = (function(){
         ctx.fill();
         ctx.closePath();
         
-        ctx.fillStyle = (flip) ? "white" : "black";
+        ctx.fillStyle = (flip) ? "red" : "black";
         ctx.beginPath(); //down-pointing triangle (middle-right of board, upper)
         ctx.moveTo(x_apex, y_apex);
         ctx.lineTo(x_apex - ornSize/2, y_apex - ornSize * Math.sqrt(3)/2);
@@ -185,11 +170,11 @@ let makruk_diagram = (function(){
 
         // side-to-move indicator (bottom right of board)
         ctx.beginPath();
-        ctx.arc(boardSize - borderSize * 0.5, boardSize - borderSize - ornSize,
+        ctx.arc(boardWidth - borderSize * 0.5, boardHeight - borderSize - ornSize,
                 ornSize/2, 0, Math.PI*2);
         ctx.stroke();
         if (fenObj.sideToMove === "w") {
-            ctx.fillStyle = "white";
+            ctx.fillStyle = "red";
             ctx.fill();
         } else if (fenObj.sideToMove === "b") {
             ctx.fillStyle = "black";
@@ -231,15 +216,6 @@ let makruk_diagram = (function(){
         let fileNum = 0;
         for (let i = 0; i < fenRank.length; ++i) {
             let symbol = fenRank[i];
-            if (fenRank[i] === "M" || fenRank[i] === "m") {
-                if (fenRank[i+1] === "~") {
-                    symbol = fenRank[i] + "~";
-                    ++i; // ate two characters
-                }
-                rankUnits.push([symbol, fileNum]);
-                ++fileNum;
-                continue;
-            }
             if (pieceChars.includes(symbol)) {
                 rankUnits.push([symbol, fileNum]);
                 ++fileNum;
@@ -271,10 +247,9 @@ let makruk_diagram = (function(){
         this.border = border;
     }
     
-    
     return {
         generateDiagrams: generateDiagrams
     };
 })();
 
-makruk_diagram.generateDiagrams();
+xiangqi_diagram.generateDiagrams();
