@@ -11,10 +11,10 @@
 
 <main>
   {{ .Content }}
-  {{ $hub_directory := .File.Dir }}
+  {{ $hub_directory := .Dir }}
   <ul>
-  {{ range .Site.Pages }}{{ if hasPrefix .File.Dir $hub_directory }}<li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
-  {{ end }}{{ end }}
+  {{ range sort (where $.Site.Pages ".Dir" "eq" $hub_directory) "File.BaseFileName" }}<li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+  {{ end }}
   </ul>
 </main>
 

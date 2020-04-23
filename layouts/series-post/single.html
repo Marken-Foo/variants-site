@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+{{ partial "head.html" . }}
+<body>
+{{ partial "header.html" . }}
+
+<div class="section-header-box">
+<h1><span class="title">{{ .Title }}</span></h1>
+{{ with .Page.Params.subtitle }}<p class="subtitle">{{ . }}</p><br> {{ end }}
+{{ with .Page.Params.author }}<p class="author">Written by {{ . }}</p><br>{{ end }}
+{{ if (gt .Page.Params.date 0) }}
+  Posted {{ .PublishDate.Format "2006-01-02 15:04" }}
+{{ end }}
+</div>
+
+<main>
+  {{ .Content }}
+  {{ if and (gt .Lastmod 0) (ne .PublishDate .Lastmod ) }}
+    Last updated: {{ .Lastmod.Format "2006-01-02 15:04" }}
+  {{ end }}
+  <div class="series-links-box">
+    {{ $this_page := . }}{{ $this_page_index := -1 }}{{ $hub_directory := .Dir }}
+    {{ $directory_pages := sort (where $.Site.Pages ".Dir" "eq" $hub_directory) "File.BaseFileName" }}
+    {{ range $page_index, $page := $directory_pages }}{{ if eq $page $this_page}}{{ $this_page_index = $page_index }}{{ end }}{{ end }}
+    <p><a href="{{ (.GetPage (printf "%s%s" $hub_directory "main.md")).Permalink }}">Series home</a></p>
+    {{ with index $directory_pages (add $this_page_index -1) }}<p class="float-left"><a href="{{ .Permalink }}">← {{ .Title}}</a></p>{{ end }}
+    {{ with index $directory_pages (add $this_page_index 1) }}<p class="float-right"><a href="{{ .Permalink }}">{{ .Title}} →</a></p>{{ end }}
+  </div>
+</main>
+
+{{ partial "footer.html" . }}
+</body>
+</html>
