@@ -11,9 +11,9 @@
     {{ range (where .Data.Pages "Section" "!=" "") }}
     <li>
       <span class="date">{{ .PublishDate.Format "2006-01-02" }}</span>
-      <a href="{{ .URL }}">{{ .Title }}</a>
+      <a href="{{ .Permalink }}">{{ .Title }}</a>
 	  {{ if (ne .PublishDate .Lastmod)}}
-	    <em>(Updated on: {{ .Lastmod.Format "2006-01-02 15:04" }})</em>
+	    <b>(Updated on: {{ .Lastmod.Format "2006-01-02 15:04" }})</b>
 	  {{ end }}
     </li>
     {{ end }}
