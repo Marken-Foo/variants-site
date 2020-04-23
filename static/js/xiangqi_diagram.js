@@ -15,7 +15,7 @@ let xiangqi_diagram = (function(){
     const boardSrc = "/../images/boards/xiangqiWood.png";
     // Colour themes for board.
     const WOOD = new Theme("rgb(255, 173, 74)",
-                            "rgb(0, 0, 0)",
+                            "rgb(255, 238, 170)",
                             "rgb(120, 67, 32)");
     const DEFAULT_THEME = WOOD;
     const VARIATION_THEME = WOOD;
@@ -130,6 +130,17 @@ let xiangqi_diagram = (function(){
         
         // Draw board from image.
         ctx.drawImage(boardImg, 0, 0, sqSize * 9, sqSize * 10)
+        
+        // Draw coordinates.
+        const sqFontSize = sqSize / 3;
+        ctx.font = String(sqFontSize) + "px Times New Roman";
+        
+        for (let i = 0; i < 9; ++i) {
+            let rowChar = i + 1;
+            ctx.fillStyle = colourLines;
+            ctx.fillText(rowChar, sqSize * (2 * i + 1)/2, 0 + sqFontSize/2);
+            ctx.fillText(rowChar, sqSize * (17 - 2 * i)/2, sqSize * 10);
+        }
         
         // Draw pieces.
         let unitArray = fenObj.parseRanks(flip);

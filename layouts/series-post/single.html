@@ -22,7 +22,7 @@
     {{ $this_page := . }}{{ $this_page_index := -1 }}{{ $hub_directory := .Dir }}
     {{ $directory_pages := sort (where $.Site.Pages ".Dir" "eq" $hub_directory) "File.BaseFileName" }}
     {{ range $page_index, $page := $directory_pages }}{{ if eq $page $this_page}}{{ $this_page_index = $page_index }}{{ end }}{{ end }}
-    <p><a href="{{ (.GetPage (printf "%s%s" $hub_directory "main.md")).Permalink }}">Series home</a></p>
+    {{ with index $directory_pages 0 }}<p><a href="{{ .Permalink }}">Series home</a></p>{{ end }}
     {{ with index $directory_pages (add $this_page_index -1) }}<p class="float-left"><a href="{{ .Permalink }}">← {{ .Title}}</a></p>{{ end }}
     {{ with index $directory_pages (add $this_page_index 1) }}<p class="float-right"><a href="{{ .Permalink }}">{{ .Title}} →</a></p>{{ end }}
   </div>
