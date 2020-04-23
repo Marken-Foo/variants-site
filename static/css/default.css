@@ -42,10 +42,30 @@ main {
 	margin: 0 auto;
 }
 
+.series-links-box {
+    text-align: center;
+    wdith: 100%
+}
+
+.float-left {
+    float: left;
+    width: 50%;
+}
+
+.float-right {
+    float: right;
+    width: 50%;
+}
+
 /* Notation */
 .mainline {
 	font-family: FigurineSymbol, Times New Roman, serif;
 	font-weight: bold;
+}
+
+/* Editor comments */
+.remark {
+    color: blue;
 }
 
 /* Western chess diagrams */

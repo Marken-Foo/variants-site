@@ -108,7 +108,7 @@ let xiangqi_diagram = (function(){
         /** Draws a xiangqi position (given by the FEN) on the given canvas.
             Board can be flipped to be from black's perspective.
         **/
-        // TODO: redo the board border and stuff
+        // TODO: do the board coordinates jiu-yi, 1-9
         // These settings determine the colour and internal sizing of the board.
         const colourBase = theme.base;
         const colourLines = theme.lines;

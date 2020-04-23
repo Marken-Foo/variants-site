@@ -7,7 +7,9 @@ date = 2020-04-17T23:28:10+08:00
 
 Welcome to Illion's chesses site!
 
-This site is dedicated to all kinds of chess types and variants: xiangqi, go, shogi, makruk, crazyhouse, orthodox retrograde problems...
+This site is dedicated to all kinds of chess types and variants: xiangqi, go, shogi, makruk, orthodox retrograde problems...
+
+...with the very glaring exception of atomic chess, which you can find at [my other site](https://illion-atomic.netlify.app/).
 
 Powered by GitHub, Netlify, and Hugo.
 
