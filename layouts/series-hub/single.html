@@ -11,9 +11,9 @@
 
 <main>
   {{ .Content }}
-  {{ $hub_directory := .Dir }}
+  {{ $hub_directory := .File.Dir }}
   <ul>
-  {{ range sort (where $.Site.Pages ".Dir" "eq" $hub_directory) "File.BaseFileName" }}<li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+  {{ range sort (where $.Site.Pages ".File.Dir" "eq" $hub_directory) "File.BaseFileName" }}<li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
   {{ end }}
   </ul>
 </main>
