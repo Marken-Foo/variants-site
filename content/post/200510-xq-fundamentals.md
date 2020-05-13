@@ -1,5 +1,5 @@
 +++
-title = "Xiangqi fundamentals"
+title = "Introduction to evaluating xiangqi positions"
 date = 2020-05-10T17:30:24+08:00
 lastmod = 2020-05-10T17:30:24+08:00
 description = ""
@@ -18,7 +18,7 @@ This is a translation of [an article about positional evaluation in xiangqi](htt
 
 ## A fundamental skill in xiangqi, to think that I still didn't know it after so many years... ##
 
-Text source: WeChat public group "象棋微学堂"
+Text source: WeChat public group of "象棋微学堂" (WeChess)
 
 "Evaluating a position" in xiangqi refers to a player's overall analysis and judgement of the deployment and positioning of the forces of both sides, and from this gaining a sense of the future developments in the game. This kind of conclusion should be an objective reflection of the actual position, and forms the basis of the player's decisions on the strategy and tactics that follow. Evaluating a position should be one of the fundamental skills every xiangqi player has, and in the author's opinion is the most important of those skills.
 
@@ -33,7 +33,7 @@ A piece's basic value is how much it is worth when considered in isolation, and 
 
 Generally speaking, a pawn that has not crossed the river has the weakest strength, and plays a role like that of a "sentry": watching and protecting the riverbank, impeding the invasions of enemy forces whilst its own attacking power is feeble, controlling just a single point on the board. So the pawn's basic value is the smallest among the piece types, and set to be worth 1 point.
 
-A pawn that has crossed the river has much more power than one that has not. It is able to threaten enemy pieces, controlling up to three points on the board. As such, its basic value is 2 points (every point on the board it controls is 0.5 points, plus a "never-say-die" spirit ^_^). However, when a pawn reaches the last rank, the xiangqi proverb "an old pawn does nothing" refers to the *situational value* of the pawn reducing its overall value.
+A pawn that has crossed the river has much more power than one that has not. It is able to threaten enemy pieces, controlling up to three points on the board. As such, its basic value is 2 points (every point on the board it controls is 0.5 points, plus a "never-say-die" spirit ^_^). However, when a pawn reaches the last rank, the xiangqi proverb "an old pawn does nothing" {{< remark >}}(NB: 老兵无功){{< /remark >}} refers to the *situational value* of the pawn reducing its overall value.
 
 Advisors and elephants have the primary role of ensuring the king's safety, each controlling up to four points on the board, and it is generally considered that the trade of a crossed pawn for an advisor or an elephant is an even trade. Because elephants have a larger movement range than advisors, they can perform in more roles than advisors (e.g. preventing enemy pawns from crossing the river), and so an advisor has a basic value of 2 points, and an elephant 2.5 points.
 
@@ -47,7 +47,7 @@ The chariot has a stronger raw power than all the above pieces, controlling up t
 
 Aside from piece values, the other key factor in material consideration is **material composition**. In situations where the material values of both sides are the same, differences in the piece types composing each army will also result in a difference in the positional evaluation.
 
-For instance, in a situation where both sides have the full complement of advisors and elephants {{< remark >}}(NB: 仕相全, literally "all advisors and elephants", perhaps usefully translated to "complete defenders"?){{< /remark >}}, the combination of chariot + horse + cannon is slightly better than two chariots, and better than chariot + two horses or even chariot + two cannons. In the diagram, Red can use the tactic 1. R4+6 to trade a chariot for horse and cannon, resulting in the advantageous position of chariot + horse + cannon versus two chariots.
+For instance, in a situation where both sides have the full complement of advisors and elephants {{< remark >}}(NB: 仕相全, literally "all advisors and elephants", perhaps usefully translated to "full guard"?){{< /remark >}}, the combination of chariot + horse + cannon is slightly better than two chariots, and better than chariot + two horses or even chariot + two cannons. In the diagram, Red can use the tactic 1. R4+6 to trade a chariot for horse and cannon, resulting in the advantageous position of chariot + horse + cannon versus two chariots.
 
 {{< fen-diag variant="xiangqi" caption="Red gets a better material composition after 1. R4+6! A5+6 2. R7+1." fen="4kabr1/4a4/2n1bc3/p1R1p1p1p/9/2P5P/P3P1r2/2N1C4/5R3/2BAKAB2 w - - 0 1" >}}
 
@@ -84,7 +84,7 @@ The broad aspects described above are referred to as material and position. A ga
 
 While evaluating a position, besides material and positional concerns, one more consideration must be accounted for, that of speed: **weaknesses in formation or in king safety** can result in a side holding both material and positional advantages losing in the end!
 
-The classic examples of a formation weakness are the palace-centre horse, cannon and chariot {{< remark >}}(NB: 窝心马，窝心炮，窝心车){{< /remark >}}. As the diagram below shows, Black has all advisors and elephants, has one more chariot than Red, yet because of the red cannon in the centre, not only can they not exert their strength, they also deprive the black king of any mobility, who can only watch as Red's 1-file pawn makes the long journey to form the iron-bolt checkmate pattern.
+The classic examples of a formation weakness are the vexed horse, cannon and chariot {{< remark >}}(NB: 窝心马，窝心炮，窝心车){{< /remark >}}. As the diagram below shows, Black has all advisors and elephants, has one more chariot than Red, yet because of the red cannon in the centre, not only can they not exert their strength, they also deprive the black king of any mobility, who can only watch as Red's 1-file pawn makes the long journey to form the iron-bolt checkmate pattern.
 
 {{< fen-diag variant="xiangqi" caption="Black is up material, but completely lost." fen="2bakab2/4r4/4c4/p3C4/2p3p2/P8/2P3P1P/9/4A4/3A1K3 w - - 0 1" >}}
 
