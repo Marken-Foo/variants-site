@@ -32,7 +32,7 @@ When talking about the nature of chess as an artistic pursuit, the proverbs tell
 
 Xiangqi is a battle of wits: **Chess is like war; moving pieces is as commanding soldiers.** （象棋似布阵，点子如点兵）
 
-What is the basic plan in chess? The proverb goes: **Value your pawns' speed, strive to reach mate first.** （兵贵神速，抢先入局） Xiangqi emphasises the notion of "first"/"the initiative", as embodied in the proverbs:
+What is the basic plan in chess? The proverb goes: **Value your troops' speed, strive to reach mate first.** （兵贵神速，抢先入局） Xiangqi emphasises the notion of "first"/"the initiative", as embodied in the proverbs:
 
 - **Sacrifice for the initiative.** （弃子争先）
 - **Prefer losing a horse to losing the initiative.** （宁失一马，不失一先）
@@ -71,12 +71,12 @@ The cannon:
 
 The pawn:
 
-- **Pawn in the palace heart, poor king falls apart** （卒坐宫心，老帅发昏）
+- **Pawn in the palace heart, poor king falls apart.** （卒坐宫心，老帅发昏）
     - A pawn in the centre point of the palace practically paralyses the enemy king; mate will not be far off.
 
 The king:
 
-- **When the king comes to fight, he brings the strength of two.** （老将出马，一个顶俩）[^5]
+- **When the king comes to fight, he brings the might of two.** （老将出马，一个顶俩）[^5]
     - The king has very strong attacking power, effectively acting like a rook against the enemy king. Even in the middlegame, use him!
 
 When it comes to the impotence of the same pieces, yet more proverbs apply:
@@ -88,7 +88,7 @@ When it comes to the impotence of the same pieces, yet more proverbs apply:
 - **With a vexed horse, one is as good as dead.** （马退窝心，不死也昏）
     - A "vexed horse" is a xiangqi term referring to a horse which is in one's own palace centre. On that spot it gets in the way of the king and the advisors, and if pinned by a cannon, the resulting poor defensive shape can be fatal. "Vexed" chariots and cannons are also quite bad, but not as severe as vexed horses.
 - **A horse on the rim is dim.** （马跳边，易被歼）
-    - Analogous to the western chess equivalent proverb. A horse on the edge of the board has fewer prospects than in the centre, and indeed can be trapped and captured more easily by a chariot or edge pawn.
+    - Equivalent to the western chess saying. A horse on the edge of the board has fewer prospects than in the centre, and indeed can be trapped and captured more easily by a chariot or edge pawn.
 - **A cannon lone unto the breach, makes no waves on the beach.** （炮进冷苍，难兴风浪）
     - A single cannon heading into enemy territory with no support is rather impotent. The cannon in particular is poor at exerting its strength at close range, so any  incursions into the enemy camp should be carefully considered.
 - **A lone cannon sounds not.** （孤炮难鸣）
@@ -111,7 +111,7 @@ Proverbs even dialectically describe the synergies between the pieces:
 - **Horse and pawn struggle to break a full guard.** （马卒难破士相全）
     - A typical summary of a theoretical endgame. Horse + pawn in general cannot break the defence of a full set of advisors and elephants. However, missing a single defensive unit gives the horse and pawn the edge, with many positions being a forced win with good technique. I think the lesson is twofold: one is that endgames can rest on a knife's edge, and two is that endgames are important!
 - **Lacking an advisor, fear horses; lacking an elephant, fear cannons.** （缺士怕马，缺相怕炮）
-    - A mnemonic for judging material compositions. When missing an advisor, it becomes difficult to defend against horses (which are close-ranged pieces and can target the remaining advisor and king effectively); when missing an elephant, conversely it becomes difficult to defend against the long-ranged cannon, whereby the remaining advisors serve as cannon mounts and cramp the king, while the lone elephant is more easily picked off once pinned.
+    - A mnemonic for judging material compositions. When missing an advisor, it becomes difficult to defend against horses (which are close-ranged pieces and can target the remaining advisor and king effectively); when missing an elephant, conversely it becomes difficult to defend against the long-ranged cannon, whereby the remaining advisors serve as cannon mounts and cramp the king, and the lone elephant is more easily picked off once pinned.
 - **Lacking an advisor, fear the chariot pair.** （缺士怕双车）
     - In the same vein, two chariots can easily overwhelm a king and single advisor in the middlegame for mate. When the advisor pair has been broken, the defender could try to trade off at least one pair of chariots to avoid falling victim to such a crushing attack.
 
