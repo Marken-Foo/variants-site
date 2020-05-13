@@ -47,12 +47,14 @@ When emphasising prudence, we also say: **One incautious step is followed by rui
 Xiangqi proverbs even describe the power of the chess pieces.
 
 The chariot:
+
 - **A chariot frightens ten pieces.** （一车十子寒）
     - Meaning that the chariot has enormous value. Ten pieces is a poetic exaggeration.
 - **There is no sunken moon against a correctly-played chariot.** （车正永无沉底月）[^4]
     - References the RC v R endgame. If the defending side's chariot [takes the central line and plays correctly](https://baike.baidu.com/item/%E8%BD%A6%E6%AD%A3%E6%B0%B8%E6%97%A0%E6%B2%89%E5%BA%95%E6%9C%88), the attacking side cannot win; the winning method there is called "dredging the moon from the ocean bed".
 
 The horse:
+
 - **The horse imposes in all directions.** （马有八面威风）
     - Meaning the horse is a strong piece. The original references the normal expression 八面威风, "to be imposing" literally from eight sides, which in turn references the horse's maximum eight legal moves.
 - **The horse treads everywhere.** （马蹬四方）
@@ -63,14 +65,17 @@ The horse:
     - Referring to a pattern where [a single horse can paralyse the opponent's king](https://baike.baidu.com/item/%E9%A9%AC%E8%B8%A9%E6%97%A0%E6%A3%8B), winning. The horse can be a very potent attacker.
 
 The cannon:
+
 - **Face a cannon straight, bad tidings await.** （空头炮，凶恶难当）
     - One 空头跑, literally "vacant-head cannon", is an enemy cannon in the central line vertically in front of your king with nothing in between. It is extremely difficult to defend against the ensuing attack, as the elephants and advisors cannot rise to the central line to defend.
 
 The pawn:
+
 - **Pawn in the palace heart, poor king falls apart** （卒坐宫心，老帅发昏）
     - A pawn in the centre point of the palace practically paralyses the enemy king; mate will not be far off.
 
 The king:
+
 - **When the king comes to fight, he brings the strength of two.** （老将出马，一个顶俩）[^5]
     - The king has very strong attacking power, effectively acting like a rook against the enemy king. Even in the middlegame, use him!
 
