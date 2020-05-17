@@ -50,7 +50,7 @@ The chariot:
 
 - **A chariot frightens ten pieces.** （一车十子寒）
     - Meaning that the chariot has enormous value. Ten pieces is a poetic exaggeration.
-- **There is no sunken moon against a correctly-played chariot.** （车正永无沉底月）[^4]
+- **There is no sunken moon against a well-played chariot.** （车正永无沉底月）[^4]
     - References the RC v R endgame. If the defending side's chariot [takes the central line and plays correctly](https://baike.baidu.com/item/%E8%BD%A6%E6%AD%A3%E6%B0%B8%E6%97%A0%E6%B2%89%E5%BA%95%E6%9C%88), the attacking side cannot win; the winning method there is called "dredging the moon from the ocean bed".
 
 The horse:
@@ -107,7 +107,7 @@ Proverbs even dialectically describe the synergies between the pieces:
 - **First central cannon, next jump a horse.** （当头炮，马来招）
     - A mnemonic for the first two moves of the game: 1. C2=5 followed by 2. H2+3. The sequence of attacking the opponent's central pawn then defending your own has long been considered to be the strongest set of opening moves. It even works as Black!
 - **With a high advisor, fear not horse checks.** （摆上羊角士，不怕马来将）
-    - A "goat's horn advisor" 羊角士 is one at the top corner of the palace. There, it can work to prevent enemy horse attacks by blocking it from jumping, especially to the dangerous spot forking the king and chariot's starting squares.
+    - A "ram's horn advisor" 羊角士 is one at the top corner of the palace. There, it can work to prevent enemy horse attacks by blocking it from jumping, especially to the dangerous spot forking the king and chariot's starting squares.
 - **Horse and pawn struggle to break a full guard.** （马卒难破士相全）
     - A typical summary of a theoretical endgame. Horse + pawn in general cannot break the defence of a full set of advisors and elephants. However, missing a single defensive unit gives the horse and pawn the edge, with many positions being a forced win with good technique. I think the lesson is twofold: one is that endgames can rest on a knife's edge, and two is that endgames are important!
 - **Lacking an advisor, fear horses; lacking an elephant, fear cannons.** （缺士怕马，缺相怕炮）
