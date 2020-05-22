@@ -9,6 +9,8 @@ variants = ["xiangqi"]
 categories = ["XQSFCB"]
 tags = ["translation"]
 type = "series-hub"
+
+draft = true
 +++
 
 This is the hub page for *Introduction to xiangqi mating techniques* (象棋杀法初步/*Xiangqi shafa chubu*). I do not own the source material. I try here to translate the book to English, adding comments, more diagrams and sometimes extra variations.

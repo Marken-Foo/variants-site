@@ -18,8 +18,14 @@ This is a glossary of xiangqi terms for reference, and some terms that I use whe
 **Kill** （杀；杀棋）
 : Checkmate. Can be a verb or noun. A literal translation, but a common and succinct one.
 
+**Consecutive-check kill** （连将杀）
+: A checkmate brought about by a continuous series of checks.
+
 **Threatmate** （要杀/叫杀）
 : A move that threatens a checkmate on the following move.
+
+**Brinkmate** （绝杀）
+: A situation where a *consecutive-check kill* is threatened on the following move and the other side has no defence.
 
 **Root** （根；生根）
 : A rooted piece is one which has a defender; the defender is called the *root*. Conversely, an unrooted piece is an undefended piece. Also a verb, as in *rooting a piece*, to provide a piece with a defender.
@@ -186,7 +192,7 @@ Taken from GM Tu Jingming's "Practical Xiangqi Endgames" （象棋实用残局�
 **Full guard** （士象全）
 : (To have) Both advisors and both elephants intact. In the endgame, a full guard can draw against a single chariot by having both advisors and elephants guarding the central line.
 
-**Crossed defenders** （交叉士象）
+**Crossed guard** （交叉士象）
 : Referring to the formation with one advisor and elephant each on the central line, with the other advisor and elephant on opposite sides.
 
 **Triple advisors** （三士）
@@ -316,7 +322,7 @@ Taken from GM Tu Jingming's "Practical Xiangqi Endgames" （象棋实用残局�
 : A highly mobile and powerful piece, worth about twice of a single cannon or horse. Moves identically to the rook in western chess.
 
 **Central chariot** （中车/车正）
-: In the endgame, a chariot on the central file. It prevents the *sunken moon* mate, and more generally it is a good principle to occupy the central file with king and rook where possible. Proverbs such as *"there is no sunken moon against a well-played chariot"* and *"there is no losing while the chariot stays in the centre"* highlight this.
+: In the endgame, a chariot on the central file. It prevents the *sunken moon* mate, and more generally it is a good principle to occupy the central file with king and rook where possible. Proverbs such as *"there is no sunken moon against a central chariot"* and *"there is no losing while the chariot stays in the centre"* highlight this.
 
 **Active chariot / bright chariot** （通头车/高车/明车）
 : Refers to an actively-placed chariot, unblocked by its own pieces or enemy pieces.

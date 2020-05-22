@@ -50,7 +50,7 @@ The chariot:
 
 - **A chariot frightens ten pieces.** （一车十子寒）
     - Meaning that the chariot has enormous value. Ten pieces is a poetic exaggeration.
-- **There is no sunken moon against a well-played chariot.** （车正永无沉底月）[^4]
+- **There is no sunken moon against a central chariot.** （车正永无沉底月）[^4]
     - References the RC v R endgame. If the defending side's chariot [takes the central line and plays correctly](https://baike.baidu.com/item/%E8%BD%A6%E6%AD%A3%E6%B0%B8%E6%97%A0%E6%B2%89%E5%BA%95%E6%9C%88), the attacking side cannot win; the winning method there is called "dredging the moon from the ocean bed".
 
 The horse:
