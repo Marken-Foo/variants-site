@@ -13,6 +13,7 @@ diag-type="variation" // optional; defined in .js files
   <div class="diag-{{.Get "variant"}}-cnv-wrapper" data-fen="{{.Get "fen"}}"{{ if ((.Get "flip") | ne "") }} data-flip{{ end }}{{ if ((.Get "diag-type") | ne "") }} data-diag-type="{{.Get "diag-type"}}"{{ end }}></div>
   <figcaption>
     {{ if ((.Get "caption") | ne "") }}{{.Get "caption"}}<br>{{ end }}
+    {{ if ((.Get "provenance") | ne "") }}<b>{{.Get "provenance"}}</b><br>{{ end }}
     (FEN: {{.Get "fen"}})
   </figcaption>
 </figure>

@@ -1,0 +1,7 @@
+<hr>
+<div class="series-links-box">
+  {{ $home := .Get "home" }}{{ $prev := .Get "prev" }}{{ $next := .Get "next" }}
+  {{ if $home | ne "" }}<p><a href="{{ ref . $home }}">Series home</a></p> {{ end }}
+  {{ if $prev | ne "" }}{{ with .Site.GetPage $prev }}<p class="float-left"><a href="{{ .Permalink }}">← {{ .Title}}</a></p>{{ end }}{{ end }}
+  {{ if $next | ne "" }}{{ with .Site.GetPage $next }}<p class="float-right"><a href="{{ .Permalink }}">{{ .Title}} →</a></p>{{ end }}{{ end }}
+</div>
