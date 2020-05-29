@@ -80,6 +80,7 @@ Equivalent to the sports grade of National Second-Level Athlete. To be awarded t
 ### Professional 3-kyu
 
 Equivalent to the sports grade of National Third-Level Athlete. To be awarded the title, at least one of the following achievements is required:
+
 - National Young Adult Championship individual 17th-32nd place or team 7th-12th place;
 - National Youth Championship individual 13th-18th place (U16); or individual 9th-16th place (U14); or individual 4th-8th place (U12); or individual 1st-6th place (U10);
 - National Grading Championship:
@@ -149,8 +150,10 @@ Equivalent to the sports grade of National Third-Level Athlete. To be awarded th
 
 
 Notes:
-- In the Youth Championships, the U16, U14, U12 and U10 divisions are also called the A, B, C and D divisions respectively. Each division is also split into Boys and Girls sections.
+
+In the Youth Championships, the U16, U14, U12 and U10 divisions are also called the A, B, C and D divisions respectively. Each division is also split into Boys and Girls sections.
 
 Sources:
+
 - http://www.dpxq.com/hldcg/news_4734.html
 - http://www.xqinenglish.com/Download01/%E8%B1%A1%E6%A3%8B%E7%99%BD%E7%9A%AE%E4%B9%A6_2019_.pdf
