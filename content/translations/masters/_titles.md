@@ -31,6 +31,7 @@ The titles are:
 ### Grandmaster
 
 The highest rank attainable, equivalent to the sports grade of Master of Sport (International). As of 2019, a total of 68 GM titles were awarded, 43 male and 25 female. To be awarded the title, at least one of following achievements is required:
+
 - World Mind Sports Games or World Xiangqi Championship individual 1st-3rd place or team 1st place;
 - Asian Games individual 1st place;
 - Asian Indoor Games or Asian Xiangqi Championship individual or team 1st place;
@@ -39,6 +40,7 @@ The highest rank attainable, equivalent to the sports grade of Master of Sport (
 ### Master
 
 Equivalent to the sports grade of Master of Sport. To be awarded the title, at least one of the following achievements is required:
+
 - Asian Youth Xiangqi Championship individual 1st place;
 - National Mind Sports Games individual 1st-6th place or team 1st-3rd place (professional section); or individual 1st place (youth section);
 - National Team Championship 1st-6th place;
@@ -48,6 +50,7 @@ Equivalent to the sports grade of Master of Sport. To be awarded the title, at l
 ### Professional 1-kyu
 
 Equivalent to the sports grade of National First-Level Athlete. To be awarded the title, at least one of the following achievements is required:
+
 - National Mind Sports Games individual 7th-18th place or team 4th-6th place (professional section); or individual 2nd-6th place (young adult section); or team 1st-3rd place (amateur section);
 - National Team Championship 7th-18th place;
 - National Individual Championship 17th-36th place;
@@ -62,6 +65,7 @@ Equivalent to the sports grade of National First-Level Athlete. To be awarded th
 ### Professional 2-kyu
 
 Equivalent to the sports grade of National Second-Level Athlete. To be awarded the title, at least one of the following achievements is required:
+
 - National Mind Sports Games individual 7th-16th place (young adult section); or team 4th-8th place (amateur section);
 - National Team Championship 19th-32nd place;
 - National Individual Championship 37th-64th place;
