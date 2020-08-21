@@ -11,8 +11,11 @@ tags = []
 type = ""
 +++
 
+The Japanese Wikipedia page for tsumeshogi, translated into English by Illion. Where possible, I tried to maintain some form of correspondence between the vocabulary used by the tsumeshogi community and by western chess problemists. This is hopefully of interest to shogi players, shogi hobbyists, and chess problemists looking to get into shogi problems.
 
 https://ja.wikipedia.org/wiki/%E8%A9%B0%E5%B0%86%E6%A3%8B
+
+------
 
 # Tsumeshogi #
 
@@ -146,7 +149,7 @@ The exact definitions of these categories may vary from person to person.
 **Kyoku-dzume （曲詰） and aburidashi （あぶりだし）**
 : Problems where the arrangement of the pieces on the board draws out a shape or a character. Those where the shape or character appear as the initial diagram are called kyoku-dzume, while those where they appear as the final mating position are called aburidashi (named for a form of invisible ink writing). The name aburidashi comes from 1937, when 18-year-old prodigy Watanabe Susumu composed three problems spelling 「カ」「ミ」「風」 (to commemorate the flight of the 神風号 from Tokyo to London), and Katou Jirou (honorary 9-dan) named the tsumeshogi technique. There are also tsumeshogi problems where the board arrangement occurs in the middle of the solution. Problems where both initial and final positions form shapes or characters are called rittai-kyokudzume. Shogun Tokugawa Ieyasu's composition 「七の字詰め」 is a famous example. Kyoku-dzume are also composed to celebrate an event, especially for shogi players or tsumeshogi composers.
 
-**Sougyoku tsumeshogi （双玉詰将棋）**
+**Sougyoku tsumeshogi / "Two king tsumeshogi" （双玉詰将棋）**
 : Problems where semekata also has a king, hence two kings are on the board (sougyoku = two kings). Like in actual shogi, semekata must respond when gyokukata delivers a check. Although Katou Geno's compositions just after World War II heralded the start of an age of sougyoku problems, the first issue of the "Shogi Sekai" monthly (October 1937) featured sougyoku problems, and it is unclear when the first actual publication of such a problem was. A notable sougyoku composer today is professional 7-dan Kanki Hiromitsu, with many published problems to his name.
 
 **Daidou tsumeshogi / Daidougi （大道詰将棋・大道棋）**
@@ -155,17 +158,153 @@ The exact definitions of these categories may vary from person to person.
 **Lance-pawn problems / Gold problems / Silver problems （香歩問題・金問題・銀問題）**
 : These types of problems have all regularly appeared as daidougi. There are a number of series of daidougi with identical starting positions, differing only in the pieces in hand, hence the name of these types of problems.
 
-**Kemuri-dzume （煙詰）**
+**Kemuri-dzume / "Smoke mate" （煙詰）**
 : Problems where the initial position has all 39 pieces on the board (except semekata's king), and the final position has the minimum number of pieces needed for mate (3 pieces). The 99th problem in Itou Kanju's 『将棋図巧』 collection is the first kemuri-dzume composed. Note that for the king to be mated not at the edge of the board, 4 pieces must remain (including the king); this was originally the subject of debate, but today is accepted as a type of kemuri-dzume.
 
 
 #### Classification by initial position ####
 
-**Mushikake （無仕掛け）**
+**Mushikake / "Guileless diagram" （無仕掛け）**
 : Tsumeshogi where semekata has no pieces on the boad in the initial position.
 
-**Muboubi zushiki （無防備図式）**
+**Muboubi zushiki / "Defenceless diagram" （無防備図式）**
 : Tsumeshogi where gyokukata has no pieces other than the king on the board in the initial position.
 
-JA parentheses
-（）
+**Hadagyoku / "Naked king" （裸玉）**
+: Both mushikake and muboubizushiki at the same time, i.e. there is only the king on the board in the initial position. The 98th problem in Itou Kanju's 『将棋図巧』 collection is the first such problem composed.
+
+**Tanki zushiki / "Lone wolf diagram" （単騎図式）**
+: Tsumeshogi where semekata only has one piece at the start of the problem. Further separated into categories where this piece is on the board, on in hand. If it is in hand, it is necessarily also a mushikake tsumeshogi by definition.
+
+**Isshoku zushiki / "Monochrome diagram" （一色図式）**
+: Tsumeshogi where the initial position consists of only one type of piece apart from the king. All copies of these pieces must be on the board for either side and not in either player's hand. For instance, a problem with a king and two rooks is a "Rook monochrome".
+
+**Nanairo zushiki / "Rainbow diagram" （七色図式）**
+: In the initial position, aside from the king, exactly one of each type of piece (rook/bishop/gold/silver/knight/lance/pawn) is present. Separated into categories where this restriction is only for pieces on the board, or includes semekata's hand pieces. Another category is where the 7 pieces are on the board, and semekata has further pieces in hand. The promoted silver/knight/lance should not be used unless there is an absolute need for them.
+
+**Hikaku zushiki / "Rook-bishop diagram" （飛角図式）**
+: In the initial position, only the king, both rooks and both bishops (can be promoted) are on the board. No restriction on hand pieces.
+
+**Oogoma/kogoma zushiki / "Major/minor piece diagram" （大駒図式・ 小駒図式）**
+: Major-piece tsumeshogi are those with only the king, both rooks, and both bishops (can be promoted) in the initial position including semekata's hand pieces. Unlike rook-bishop tsumeshogi, there is no restriction that they must all be on the board. Minor-piece tsumeshogi is the converse, where the major pieces are all in gyokukata's hand. Such minor-piece tsumeshogi were already present in the works of Oohashi Soukei I.
+
+**Binbou zushiki / "Pauper diagram" （貧乏図式）**
+: In the initial position, all golds and silvers are in gyokukata's hand. Promoted silvers/knights/lances/pawns are allowed despite moving like golds, but works without even those are called "ascetic paupers" （清貧図式）.
+
+**Nigiri-dzume / "Grab tsume" （握り詰め）**
+: A number of pieces are taken from the piece box at random, and these, along with one king, are all then used to compose a tsumeshogi (pieces on the board + semekata's hand pieces). Urano Masahiko is particularly good at this.
+
+**Toufu-zushiki / "Tofu diagram" （豆腐図式）**
+: In the initial position, only the king, pawns and promoted pawns are present. The name is a play on words, from the promoted pawns (to) and pawns (fu). The first published problem of this type was in 1953 by Kurosaka Takami （黒坂隆身） in Pinwheel 『風ぐるま』.
+
+**Uguisu-zushiki / "Songbird diagram" （鶯図式）**
+: The initial position contains only the king, knights, lances and pawns (and promoted variants thereof). The name comes from the pieces used, 「王歩桂香」 = 「オウホケキョ」 sounding like the call of the Japanese bush warbler: 「ホーホケキョ」.
+
+**Jissen hatsugata / "Starting array tsume" （実戦初形）**
+: In the initial position, gyokukata has a complete starting array of their pieces in the first three ranks on the board (and possibly more pieces in hand). The first such composition was published in 1981 in the Kobe Shimbun by Naitou Kunio.
+
+**Isshu mochigoma / "All of a kind" （一種持ち駒）**
+: In the initial position, semekata's hand is composed of exactly all of one type of piece (e.g. 4 silvers, or 18 pawns).
+
+
+#### Classification by mate delivered ####
+
+**Secchin-dzume / "Lavatory tsume" （雪隠詰）**
+: Tsumeshogi where the king is mated on one of the corners of the board (the 11/91/19/99 squares). Named since the lavatory or outhouse is usually located at the corner of a house. The term is also applicable to practical games (e.g. resulting from anaguma games.)
+
+**Miyako-dzume / "Metropole tsume" （都詰）**
+: Tsumeshogi where the king is mated in the centre of the board (the 55 square). Also applicable to practical games.
+
+**Sukashi-dzume / "Watermark tsume" （すかし詰）**
+: Tsumeshogi where the king is mated from a distance by a rook, bishop (or promoted variants thereof), or unpromoted lance. This requires all aigoma to be impossible or ineffectual.
+
+**Tanki-dzume / "Lone wolf mate" （単騎詰）**
+: In the mating diagram, semekata only has one piece left. Also called "super tsumeshogi" 「スーパー詰将棋」.
+
+
+### Devices ###
+
+Tsumeshogi, in particular the longer ones, often use and layer the following techniques, called devices.
+
+**Ryuuoi / "Dragon chase" （竜追い）**
+: A promoted rook chasing the king. This is a common device used by many long tsumeshogi, started by the problem "Kotobuki" 『寿』 by Itou Kanju.
+
+**Mochigoma henkan / "Hand piece conversion" （持ち駒変換）**
+: Exchanging the pieces in hand for other types, by means of discovered check or other methods.
+
+**Rendori & hagashi （連取り・はがし）**
+: Reducing the number of gyokukata's pieces on the board. Taking pieces already in place as a side-effect of a natural sequence is rendori; luring pieces to a specific location to be captured is hagashi. It is common for the latter to be used in conjunction with mochigoma henkan to acquire a piece to lure with. Although this is common in longer problems, it is rarely seen in shorter ones as it would usually be bad technique.
+
+**Chie no wa / "Wire puzzle" （知恵の輪）**
+: An invention by the Japanese arithmetician Kurushima Kinai, by means or repeating a long sequence of moves akin to sennichite, the position slowly changes after each repetition to achieve the final result. Aside from Kurushima's problems "Golden wire puzzle" 「金知恵の輪」 and "Silver wire puzzle" 「銀知恵の輪」, among others the longest tsumeshogi composed "Microcosmos" uses this technique.
+
+**Ryuu noko & uma noko / "Dragon saw & horse saw" （龍鋸・馬鋸）**
+: Whereby a promoted rook or promoted bishop repeatedly checks by moving in a zigzag pattern like a sawblade. The more common of the two is a horse saw, the horse moving one square at a time horizontally and vertically.
+
+**Komaichi henkan / "Piece displacement" （駒位置変換）**
+: Taking a piece on the board and having gyokukata capture it to place it elsewhere on the board. By this sequence, the original piece has been moved to a different location, often one to which it could not have directly moved.
+
+**Chuuai / "Intermediate interposition" （中合）**
+: An aigoma which is placed at some distance from the king, and which affects the subsequent play in a significant way. In problems featuring chuuai, it usually extends the length of the problem, or allows the king to escape. Oohashi Soukei's "Lance-pawn problem" 「香歩問題」 has a famous silver chuuai. Outside of tsumeshogi, chuuai is also noted as a defensive tesuji.
+
+**Idouai / "Moving interposition" （移動合）**
+: A defensive piece which is moved to function as an aigoma. This can arise as a way to maintain an escape route for the king, or also to create complications or lengthen the mate. Sometimes idouai is also necessary to avoid komayori mates (mates with semekata having pieces remain in hand).
+
+**Jamakoma shoukyo/ "Eliminating in-the-way pieces" （邪魔駒消去）**
+: Removing a friendly piece that is in the way by letting the opposing side take it, clearing the way for a mate. This theme can arise from the problem diagram, or midway through a solution line.
+
+**Uchifu-dzume kaihi / "Pawn-drop mate avoidance" （打ち歩詰め回避）**
+: Where a normal sequence would culminate in a pawn-drop mate, avoiding it by playing a different sequence. By displacing defensive pieces or reducing the squares covered by attacking pieces, an escape route can be created for the king, or a defensive piece can be made to capture the dropped pawn. There are also cases where a major piece is deliberately left unpromoted to avoid pawn-drop mate. Furthermore, gyokukata can also apply this theme, using a defence relying on the illegality of a pawn-drop mate.
+
+**Uchigae / "" （打ち換え）**
+: Refers to sacrificing a piece on a square then dropping another piece on that same square, and also dropping a piece (of the sacrificed piece's type) on a different square.
+
+**Switchback （スイッチバック）**
+: Refers to a piece on the board moving away from its square, then later returning to the same square. Originates from the vocabulary of western chess problems.
+
+**Furisenda / "" （不利先打）**
+: With two different piece types in hand and both able to be dropped for identical effect, it is typically good to drop the weaker one first, keeping the stronger one in hand; the idea of furisenda is that the correct move is to drop the stronger one first. e.g. dropping a rook where a lance would apparently suffice, or a gold instead of a pawn.
+
+### Tsumeshogi specialised vocabulary ###
+
+**Sakui / "Intention" （作意）**
+: The composer's intended solution sequence. This constitutes the correct answer for a tsumeshogi problem. In the case of a cooked problem, the intention is not a unique correct solution.
+
+**Gisakui / "False intention" （偽作意）**
+: A sequence that looks like the intended solution, but actually does not lead to mate. Is a subset of the tries.
+
+**Magire / "Try" （紛れ）**
+: A sequence that does not lead to mate. A tsumeshogi with more tries is often harder to solve.
+
+**Fukanzensaku / "Cooked problem" （不完全作）**
+: A problem that does not stand as a correct tsumeshogi. This includes problems with no solution, or problems with alternate valid solutions (yo-dzume). As told by Yamaguchi Hitomi （山口瞳）, the director of external relations of the Japan Shogi Association Serizawa Hirobumi （芹沢博文） once received a phone call regarding a cooked problem. Yamaguchi remarked, "It is my view that it is very hard to remove duals from a tsumeshogi."
+
+**Kizu / "Defect" （キズ）**
+: Flaws in a correct tsumeshogi that detract from its value as a composition. For example, duals on the final move, longer mating variations, mating variations of the same length, different mates in the variations, non-unique move options, etc.
+
+**Henka / "Variation" （変化）**
+: Move sequences that diverge from the intention by gyokukata making an alternative defensive move. As the number of variations increase, it becomes harder to determine which line is the intention, and the problem also becomes harder to solve.
+
+**Yo-dzume / "Duals" （余詰）**
+: Move sequences leading to mate that diverge from the intention by semekata making an alternative move. These could be longer or shorter than the intention. Sequences that lead to mate faster than the intention are called haya-dzume （早詰）. A problem with any duals that are not on the final move is considered cooked.
+
+**Saishuute yo-dzume / "Final move duals" （最終手余詰）**
+: On the final move of a variation, when there is more than one mating move, or when there are sequences leading to mate in three or more moves. Although these do not cook a problem unlike regular duals, they are still considered to be flaws.
+
+**Henka choutesuu / "Longer mating variations" （変化長手数/変長）**
+: A mating variation longer than the intention. This would normally render a problem cooked; however, an exception is made for variations which are longer than the intention by 2 moves *and* have excess pieces remaining in hand (komayori). Such variations would then be only flaws and not cooks.
+
+**Henka doutesuu / "Same-length mating variations" （変化同手数/変同）**
+: A mating variation of equal length to the intention. These are permitted to end in komayori, but if they end with no pieces left in hand then they are considered flaws. Note that non-unique move options are not considered to result in same-length mating variations if the content after the option is identical.
+
+**Henka betsu-dzume / "Duals in variations" （変化別詰/変別）**
+: Having a dual within a variation. Such duals within variations are not considered cooks, but are still flaws. (Note: specifically, this concerns duals leading to a longer or a non-excess-piece equal mate compared with the intention, occurring *within* a shorter or a excess-piece mating variation.
+
+**Komayori / "Excess pieces" （駒余り）**
+: A mate occuring with semekata having pieces still remaining in hand. This was once accepted in the main lines of very old tsumeshogi problems, but today is considered a cook if occurring in the intention. In a correct problem, excess-piece mates only occur within variations. However, they are also allowed in the intended solutions in daidougi as a matter of practice.
+
+**Higentei / "Non-unique move options" （非限定）**
+: Options available on a particular move not fundamentally changing the content of the problem. This can include the exact square to drop a long-ranged piece (rook/bishop/lance), the type of aigoma interposition, or the choice to promote or leave a piece unpromoted where it does not make a difference. These are acceptable if the subsequent moves are the same in content, and are considered flaws otherwise.
+
+**Mudaai / "Futile interposition" （無駄合）**
+: An aigoma that can be simply captured without fundamentally changing the play following it. These are not considered to be played by gyokukata, to avoid giving semekata excess pieces in hand by the end of the solution.
