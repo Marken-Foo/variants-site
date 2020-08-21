@@ -21,7 +21,7 @@ draft = true
 
 This is one of my favourite retros, so I want to post my full solution.
 
-I usually begin solving a retro by counting the pieces:
+I usually begin solving a retro by counting the pieces.
 
 White is missing just two: KB that died "at home" and S that was captured on the g-file by bPh. 
 
@@ -45,7 +45,7 @@ We are aiming for a critical position in which most of the cage pieces are in pl
 
 Let's complete the survey by looking at the other pieces we haven't examined: wPd5 potentially offers White two tempi (and then Black some tempi consequent to those uncaptures), while bPf4 has nothing to with the cage, and offers Black two tempi.
 
-The two pieces on f1 & h4 cannot both be Black, because in the critical position, wPf4 has already captured two officers, and there is at most one left. The only available White unit is Bf1, as wS is already captured on the g-file. This is a big step forward. The piece on h3 can only be Black, and only an S could reach that square. The critical position is therefore very much like the one diagrammed below, with the only uncertainly being the location of the two tempo pieces wPd5 & bPf4.
+The two pieces on f1 & h4 cannot both be Black, because in the critical position, wPf4 has already captured two officers, and there is at most one left. The only available White unit is Bf1, as wS is already captured on the g-file. This is a big step forward. The piece on h3 can only be Black, and only an S could reach that square. The critical position is therefore very much like the one diagrammed below, with the only uncertainty being the location of the two tempo pieces wPd5 & bPf4.
 
 {{< fen-diag variant="western" caption="Schema for the critical position." fen="6N1/4p2b/6pr/3P1p1k/5PRb/6pn/1PPPPPPR/2BQKBqn w" >}}
 
