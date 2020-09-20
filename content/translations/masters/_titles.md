@@ -156,4 +156,4 @@ In the Youth Championships, the U16, U14, U12 and U10 divisions are also called 
 Sources:
 
 - http://www.dpxq.com/hldcg/news_4734.html
-- http://www.xqinenglish.com/Download01/%E8%B1%A1%E6%A3%8B%E7%99%BD%E7%9A%AE%E4%B9%A6_2019_.pdf
+- http://www.xqinenglish.com/images/Downloads/_2019_.pdf
