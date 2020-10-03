@@ -58,7 +58,7 @@ There are also restrictions on the composer as to what constitutes a valid probl
 
 - There must be a single unique intended line of play.
     - Any alternate line other than the composer's intention but also leading to mate is termed a yo-dzume 余詰 (in western chess parlance, a "cook"), and considered to be a flaw in the composition.
-- At the end of the intended line of play, semekata should have no pieces left in hand. (Having extra pieces in hand, komayori 駒余り is not allowed.)
+- At the end of the intended line of play, semekata should have no pieces left in hand. (Having extra pieces in hand, koma-amari 駒余り is not allowed.)
 - The board should not have pieces that are unnecessary and do not participate in the mate. However, "practical" or "realistic"  tsumeshogi （実戦型詰将棋） will usually feature pieces to resemble formations often seen in games.
 
 ## History ##
@@ -232,8 +232,8 @@ Tsumeshogi, in particular the longer ones, often use and layer the following tec
 **Mochigoma henkan / "Hand piece conversion" （持ち駒変換）**
 : Exchanging the pieces in hand for other types, by means of discovered check or other methods.
 
-**Rendori & hagashi （連取り・はがし）**
-: Reducing the number of gyokukata's pieces on the board. Taking pieces already in place as a side-effect of a natural sequence is rendori; luring pieces to a specific location to be captured is hagashi. It is common for the latter to be used in conjunction with mochigoma henkan to acquire a piece to lure with. Although this is common in longer problems, it is rarely seen in shorter ones as it would usually be bad technique.
+**Rentori & hagashi （連取り・はがし）**
+: Reducing the number of gyokukata's pieces on the board. Taking pieces already in place as a side-effect of a natural sequence is rentori; luring pieces to a specific location to be captured is hagashi. It is common for the latter to be used in conjunction with mochigoma henkan to acquire a piece to lure with. Although this is common in longer problems, it is rarely seen in shorter ones as it would usually be bad technique.
 
 **Chie no wa / "Wire puzzle" （知恵の輪）**
 : An invention by the Japanese arithmetician Kurushima Kinai, by means or repeating a long sequence of moves akin to sennichite, the position slowly changes after each repetition to achieve the final result. Aside from Kurushima's problems "Golden wire puzzle" 「金知恵の輪」 and "Silver wire puzzle" 「銀知恵の輪」, among others the longest tsumeshogi composed "Microcosmos" uses this technique.
@@ -248,7 +248,7 @@ Tsumeshogi, in particular the longer ones, often use and layer the following tec
 : An aigoma which is placed at some distance from the king, and which affects the subsequent play in a significant way. In problems featuring chuuai, it usually extends the length of the problem, or allows the king to escape. Oohashi Soukei's "Lance-pawn problem" 「香歩問題」 has a famous silver chuuai. Outside of tsumeshogi, chuuai is also noted as a defensive tesuji.
 
 **Idouai / "Moving interposition" （移動合）**
-: A defensive piece which is moved to function as an aigoma. This can arise as a way to maintain an escape route for the king, or also to create complications or lengthen the mate. Sometimes idouai is also necessary to avoid komayori mates (mates with semekata having pieces remain in hand).
+: A defensive piece which is moved to function as an aigoma. This can arise as a way to maintain an escape route for the king, or also to create complications or lengthen the mate. Sometimes idouai is also necessary to avoid koma-amari mates (mates with semekata having pieces remain in hand).
 
 **Jamakoma shoukyo/ "Eliminating in-the-way pieces" （邪魔駒消去）**
 : Removing a friendly piece that is in the way by letting the opposing side take it, clearing the way for a mate. This theme can arise from the problem diagram, or midway through a solution line.
@@ -292,15 +292,15 @@ Tsumeshogi, in particular the longer ones, often use and layer the following tec
 : On the final move of a variation, when there is more than one mating move, or when there are sequences leading to mate in three or more moves. Although these do not cook a problem unlike regular duals, they are still considered to be flaws.
 
 **Henka choutesuu / "Longer mating variations" （変化長手数/変長）**
-: A mating variation longer than the intention. This would normally render a problem cooked; however, an exception is made for variations which are longer than the intention by 2 moves *and* have excess pieces remaining in hand (komayori). Such variations would then be only flaws and not cooks.
+: A mating variation longer than the intention. This would normally render a problem cooked; however, an exception is made for variations which are longer than the intention by 2 moves *and* have excess pieces remaining in hand (koma-amari). Such variations would then be only flaws and not cooks.
 
 **Henka doutesuu / "Same-length mating variations" （変化同手数/変同）**
-: A mating variation of equal length to the intention. These are permitted to end in komayori, but if they end with no pieces left in hand then they are considered flaws. Note that non-unique move options are not considered to result in same-length mating variations if the content after the option is identical.
+: A mating variation of equal length to the intention. These are permitted to end in koma-amari, but if they end with no pieces left in hand then they are considered flaws. Note that non-unique move options are not considered to result in same-length mating variations if the content after the option is identical.
 
 **Henka betsu-dzume / "Duals in variations" （変化別詰/変別）**
 : Having a dual within a variation. Such duals within variations are not considered cooks, but are still flaws. (Note: specifically, this concerns duals leading to a longer or a non-excess-piece equal mate compared with the intention, occurring *within* a shorter or a excess-piece mating variation.
 
-**Komayori / "Excess pieces" （駒余り）**
+**Koma-amari / "Excess pieces" （駒余り）**
 : A mate occuring with semekata having pieces still remaining in hand. This was once accepted in the main lines of very old tsumeshogi problems, but today is considered a cook if occurring in the intention. In a correct problem, excess-piece mates only occur within variations. However, they are also allowed in the intended solutions in daidougi as a matter of practice.
 
 **Higentei / "Non-unique move options" （非限定）**
