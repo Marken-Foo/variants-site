@@ -100,3 +100,5 @@ You may also encounter other genres of problem. Proof games and retros are major
 
 Anything else can generally be subsumed under the category of "fairy problems". This can be due to **fairy pieces** (pieces which move differently from the standard chess units, e.g. the Nightrider), **fairy conditions** (where the rules of the game are changed, e.g. Madrasi, where units attacked by their opposite colour counterparts cannot move), or both.
 
+The publication source of any particular fairy problem will usually include definitions of any fairy pieces or conditions used, e.g. in a summary page at the back of the publication issue. The StrateGems website lets you [look up many fairy pieces and conditions](http://www.strategems.net/sections/fairy_defs.html). Christian Poisson also offers comprehensive definitions of [fairy pieces](http://christian.poisson.free.fr/problemesis/pieces.html), [common fairy conditions](http://christian.poisson.free.fr/problemesis/condus.html), and [not-so-common ones](http://christian.poisson.free.fr/problemesis/condra.html) on his website.
+
