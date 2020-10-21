@@ -33,19 +33,19 @@ This is what a chess problem can look like in a publication or a database (the i
 As you can see, there is a lot of information. Going through each part one by one:
 
 - **"Samuel Loyd"** - the composer(s) of the problem.
-- **"610 *New York Albion* 22/09/1860"** - where and when it was published. The format may vary, but generally at least the name of the publication (here it's the *New York Albion* newspaper) and the year of publication (1860) is given.
-- **"2. Preis, Pariser Turnier"** - any awards or prizes the problem may have won (here, "2nd Prize" in a "Paris tournament"). It could be awards given out by the newspaper or magazine it was published in, or prize won in a composing tournament it was specifically submitted to.
-- **\[The problem diagram\]** - self explanatory! Referred to as "the diagram position" or simply "the diagram" when discussing.
+- **"610 *New York Albion* 22/09/1860"** - where and when it was published. In general, at least the name of the publication (here it's the *New York Albion* newspaper) and the year of publication (1860) is given.
+- **"2. Preis, Pariser Turnier"** - any awards or prizes the problem may have won (here, "2nd Prize" in a "Paris tournament"). It could be awards given out by the newspaper or magazine it was published in, or prizes won in a composing tournament it was specifically submitted to.
+- **\[Board and pieces\]** - self explanatory! Referred to as "the diagram position" or simply "the diagram".
 - **"(8+10)"** - the unit count of (white units + black units). A convenient way to verify that the position is correctly set up on a board or computer.
 - **"C+""** - if present, indicates that the problem has been verified to be sound by a computer (stands for "Computer check(ed)").
-- **"#5"** - the problem stipulation, an essential piece of information for the solver. Here it is a directmate in 5 moves.
+- **"#5"** - the problem stipulation, i.e. the objective for the solver. Here it is a directmate in 5 moves.
 
 When sharing a problem, typically we convey at least the diagram, the stipulation and the composer(s).
 
 
 ## Algebraic notation ##
 
-*If you're already a chessplayer familiar with algebraic chess notation, you just need to know that in problems, the symbol for the knight is **S** instead of **N**.*
+*If you're already a chessplayer familiar with algebraic chess notation, you just need to know that in problems, the symbol for the knight is S instead of N.*
 
 To describe pieces and moves, problemists use [algebraic notation](https://en.wikipedia.org/wiki/Algebraic_notation_(chess)). Many publications today use figurine notation, which is mostly language-independent and internationally recognisable. If using pure text, then standard problemist algebraic notation is used. This is almost identical to standard English chess notation (see the [FIDE Handbook](https://handbook.fide.com/), specifically the Laws of Chess), but with **S** as the symbol for the knight (from German *Springer*) instead of **N**, which is reserved for the *Nightrider* fairy piece.
 
@@ -87,8 +87,8 @@ Also extremely common in the problem world are helpmates, selfmates, and reflexm
 **Reflexmate (r#n)**
 : A selfmate, but with the condition that both sides *must* play a mate in 1 if it is available at any point.
 
-**The series- condition**
-: The side to move makes *n* legal moves in a row, then the other side makes 1 move to meet the stipulation. For example, a serieshelpmate in 7 (sh#7) has Black play 7 moves in a row, then White makes 1 move to checkmate Black.
+**The series- condition (ser-)**
+: The side to move makes *n* legal moves in a row, then the other side makes 1 move to meet the stipulation. For example, a serieshelpmate in 7 (ser-h#7) has Black play 7 moves in a row, then White makes 1 move to checkmate Black.
 
 You may also encounter other genres of problem. Proof games and retros are major examples of *heterodox problems* without necessarily having fairy conditions or pieces (in contrast to the *orthodox problems*: directmates, helpmates and selfmates.)
 

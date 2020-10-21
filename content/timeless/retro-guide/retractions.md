@@ -35,7 +35,7 @@ Pawns are special; a simple pawn retraction (orthogonally) cannot be an uncaptur
 
 Let's see an example. The position shown is without kings, since we haven't talked about check yet.
 
-{{ fen-diag variant="western" caption="Practice retractions." fen="1n6/3p4/8/7P/P5p1/7B/8/R7" }}
+{{< fen-diag variant="western" caption="Practice retractions." fen="1n6/3p4/8/7P/P5p1/7B/8/R7" >}}
 
 If the position is white to move, (*black* to retract!), the possible retractions are: **Na6\*b8**, **Nc6\*b8** (can be moves or uncaptures of anything but a pawn), **g5-g4** (must be a move) and **f5x~g4** (must be an uncapture, of any unit).
 

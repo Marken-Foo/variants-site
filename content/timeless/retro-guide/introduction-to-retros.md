@@ -1,7 +1,7 @@
 +++
 title = "Introduction to retros"
 date = 2020-04-28T17:12:10+08:00
-lastmod = 2020-04-28T17:12:10+08:00
+lastmod = 2020-10-21T22:50:29+08:00
 description = ""
 
 slug = "introduction-to-retros"
@@ -21,9 +21,7 @@ White is in check, but is it mate? A little reflection will lead you to answer "
 
 Well, what if I told you that *you could deduce that by yourself, simply based on the position?*
 
-Such is a *retrograde analysis problem*. The goal could be anything stipulated by the composer; the method to getting the answer will involve logical reasoning, armed only with the rules of chess, and the knowledge that the position must have arisen from a legal game of chess (however silly the moves are).
-
-(Actually, we need some conventions to deal with en passant and castling: these are stated in detail in [the Codex for Chess Composition](https://www.wfcc.ch/1999-2012/codex/), and can be slightly oversimplified to "en passant is illegal unless it can be proven otherwise" and "castling is legal unless it can be proven otherwise.")
+Such is a *retrograde analysis problem*. The goal could be anything stipulated by the composer; the method to getting the answer will involve logical reasoning, armed with only[^1] the rules of chess, and the knowledge that the position must have arisen from a legal game of chess (however silly the moves are).
 
 If you're reading this page you're probably already curious about retros, but if you're not then here are a few more to show what crazy things one might be able to prove:
 
@@ -42,11 +40,15 @@ You can *prove* that this is a draw by the 50-move rule! In other words, you can
 
 ## OK, how do I solve these retros then? ##
 
-Ah, there's the rub. Solving retros is a skill that's not easily explained in a few paragraphs. Even the solutions for each retro would take quite a few words to fully lay out, even with the background knowledge in place.
+Solving retros is all about logical reasoning. It's a skill that can be learnt, but isn't easily explained in just a few paragraphs. Writing full solutions for each retro would take many words to fully lay out, even with the background knowledge in place -- but after getting a little experience solving, we never really need that level of detail.
 
-For now, there is an excellent [introductory article by Nikolai Beluhov](https://www.chessproblem.net/viewtopic.php?t=429), who is himself an outstanding composer of retros. Through many thoroughly explained examples and problems, it leads the reader to discover and acquire the skills needed to solve retros.
+For now, there is an excellent [introductory article by Nikolai Beluhov](https://www.chessproblem.net/viewtopic.php?t=429), who is himself an outstanding composer of retros. Through many thoroughly explained examples and exercises, you can discover and acquire the skills needed to solve retros yourself.
 
 On this site, I will likewise attempt to give an introduction to this art, and eventually prepare you to understand the solutions to the problems presented above.
 
 
+[^1]: Actually, we need some conventions to deal with en passant and castling: these are stated in detail in [the Codex for Chess Composition](https://www.wfcc.ch/1999-2012/codex/), and can be slightly oversimplified to "en passant is illegal unless it can be proven otherwise" and "castling is legal unless it can be proven otherwise."
+
+
 {{< series-nav home="introduction-to-retros.md" next="your-first-retro.md" >}}
+

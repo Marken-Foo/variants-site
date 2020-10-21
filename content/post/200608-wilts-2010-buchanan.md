@@ -11,8 +11,6 @@ categories = []
 tags = ["retro", "guest"]
 type = ""
 series = []
-
-draft = true
 +++
 
 {{< remark >}}This is a guest post by Andrew Buchanan, a chess problemist who primarily composes retros, and in particular is the pioneer of the subgenre of Dead Reckoning problems. Take a look at some of his work on [his site](http://anselan.com/chess.html). Here he will present a fascinating retro problem by Gerd Wilts and its solution. Enjoy!{{< /remark >}}
