@@ -58,21 +58,44 @@ While most people would have encountered the odd chess problem in a book on main
 
 If you have something to publish, or just want to explore what others are doing, these are where you'd look. The following is definitely not an exhaustive list of extant and active journals. Google searches in your local or native language may reveal others.
 
-| Language | Journals |
-|-|-|
-| English (EN) | [The Problemist](http://www.theproblemist.org/bcps.pl) (UK), [StrateGems](http://strategems.net/) (US), [Chessproblems.ca Bulletin](http://www.chessproblems.ca/) (Canada; electronic) |
-| German (DE) | [feenschach](http://www.feenschach.de/), [Die Schwalbe](https://www.dieschwalbe.de/), [harmonie-aktiv](http://www.problemschach.de/harmonie/), [Gaudium](https://www.kunstschach.ch/gaudium.html) (Switzerland), [mpk-Blätter](https://mpk-blaetter.hpage.com/) |
-| Danish (DK) | [Problemskak](https://problemskak.dk/) |
-| Spanish (ES) | [Problemas](http://sepa64.blogspot.com/p/revista-problemas-nueva-epoca.html) (electronic) |
-| Finnish (FI) | [Tehtäväniekka](http://www.sci.fi/~stniekat/st/index.htm) |
-| French (FR) | [Phénix](http://www.phenix-echecs.fr/) |
-| Hebrew (HE) | [Variantim](http://www.variantim.org/index.html) (Israel; in Hebrew and English) |
-| Italian (IT) | [Best Problems](http://www.bestproblems.it/bppdf/Best.html) (electronic) |
-| Japanese (JP) | Problem Paradise （プロブレムパラダイス）　(no site; check out the associated Tsumeshogi Paradise for tsumeshogi problems) |
-| Lithuanian (LT) | [Šachmatija](http://sachmatija.puslapiai.lt/) |
-| Dutch (NL) | [Probleemblad](http://www.probleemblad.nl/) |
-| Romanian (RO) | [Quartz](http://quartz.chessproblems.ca/) ([older issues](https://www.stere.ro/biblioteca-digitala/reviste/quartz/); electronic), Componist (no link) |
-| Russian (RU) | [The Ural's Problemist](http://selivanov.world/en/) |
+**English (EN)**
+: [The Problemist](http://www.theproblemist.org/bcps.pl) (UK), [StrateGems](http://strategems.net/) (US), [Chessproblems.ca Bulletin](http://www.chessproblems.ca/) (Canada; electronic)
+
+**German (DE)**
+: [feenschach](http://www.feenschach.de/), [Die Schwalbe](https://www.dieschwalbe.de/), [harmonie-aktiv](http://www.problemschach.de/harmonie/), [Gaudium](https://www.kunstschach.ch/gaudium.html) (Switzerland), [mpk-Blätter](https://mpk-blaetter.hpage.com/)
+
+**Danish (DK)**
+: [Problemskak](https://problemskak.dk/)
+
+**Spanish (ES)**
+: [Problemas](http://sepa64.blogspot.com/p/revista-problemas-nueva-epoca.html) (electronic)
+
+**Finnish (FI)**
+: [Tehtäväniekka](http://www.sci.fi/~stniekat/st/index.htm)
+
+**French (FR)**
+: [Phénix](http://www.phenix-echecs.fr/)
+
+**Hebrew (HE)**
+: [Variantim](http://www.variantim.org/index.html) (Israel; in Hebrew and English)
+
+**Italian (IT)**
+: [Best Problems](http://www.bestproblems.it/bppdf/Best.html) (electronic)
+
+**Japanese (JP)**
+: Problem Paradise （プロブレムパラダイス）　(no site; check out the associated Tsumeshogi Paradise for tsumeshogi problems)
+
+**Lithuanian (LT)**
+: [Šachmatija](http://sachmatija.puslapiai.lt/)
+
+**Dutch (NL)**
+: [Probleemblad](http://www.probleemblad.nl/)
+
+**Romanian (RO)**
+: [Quartz](http://quartz.chessproblems.ca/) ([older issues](https://www.stere.ro/biblioteca-digitala/reviste/quartz/); electronic), Componist (no link)
+
+**Russian (RU)**
+: [The Ural's Problemist](http://selivanov.world/en/)
 
 
 ### Online communities ###
@@ -86,6 +109,10 @@ Aside from publishing in the journals and meeting in real-life, problemists also
 - [France Échecs](https://www.france-echecs.com/) (French; many retro discussions)
 - [Julia's Fairies](https://juliasfairies.com/) (English; focus on fairy problems)
 - [The Retro Mailing List](https://pairlist1.pair.net/mailman/listinfo/retros) (English; retro and PG discussions and tourney announcements)
+
+A mention goes out to the passionate amateurs at:
+
+- [Chess Problems and Studies Discord Server](https://discord.me/chessproblems) (English; aims to attract more people to problems)
 
 
 ### Problem databases ###
