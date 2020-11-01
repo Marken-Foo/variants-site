@@ -2,7 +2,7 @@
 title = "Introduction to problems: literacy"
 date = 2020-10-03T14:37:06+08:00
 lastmod = 2020-10-03T14:37:06+08:00
-description = ""
+description = "A quick reference for those new to chess problems."
 
 slug = "introduction-to-problems"
 variants = ["western"]
