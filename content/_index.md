@@ -15,8 +15,8 @@ For the moment the site is not completely polished, but you can still navigate u
 
 Some of the highlights you may be here for are:
 
-- [My series on shogi history]({{< ref "content/timeless/shogi-history/0.0-main.md" >}})
-- A [translation of the Japanese tsumeshogi Wikipedia article]({{< ref "content/translations/tsumeshogi-wiki.md" >}}), with information on composers, rules, themes and more
-- A [translated list of xiangqi proverbs]({{< ref "content/post/200511-xq-proverbs.md" >}})
+- [My series on shogi history]({{< relref "timeless/shogi-history/0.0-main.md" >}})
+- A [translation of the Japanese tsumeshogi Wikipedia article]({{< relref "translations/tsumeshogi-wiki.md" >}}), with information on composers, rules, themes and more
+- A [translated list of xiangqi proverbs]({{< relref "post/200511-xq-proverbs.md" >}})
 
 Powered by GitHub, Netlify, and Hugo.
