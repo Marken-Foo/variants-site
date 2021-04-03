@@ -165,7 +165,7 @@ The exact definitions of these categories may vary from person to person.
 #### Classification by initial position ####
 
 **Mushikake / "Guileless diagram" （無仕掛け）**
-: Tsumeshogi where semekata has no pieces on the boad in the initial position.
+: Tsumeshogi where semekata has no pieces on the board in the initial position.
 
 **Muboubi zushiki / "Defenceless diagram" （無防備図式）**
 : Tsumeshogi where gyokukata has no pieces other than the king on the board in the initial position.
