@@ -1,6 +1,7 @@
 +++
 title = "Home"
 date = 2020-04-17T23:28:10+08:00
+description = "TheChessPolyglot is a site about all kinds of chesses - xiangqi, shogi, makruk, and maybe even orthodox western chess."
 +++
 
 # TheChessPolyglot #

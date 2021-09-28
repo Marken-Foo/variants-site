@@ -2,7 +2,7 @@
 title = "Tsumeshogi"
 date = 2020-08-21T12:23:54+08:00
 lastmod = 2020-08-21T12:23:54+08:00
-description = ""
+description = "An independent translation of the Japanese tsumeshogi Wikipedia page, containing information not found elsewhere in English."
 
 slug = ""
 variants = ["shogi"]

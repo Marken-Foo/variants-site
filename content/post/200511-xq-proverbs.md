@@ -2,7 +2,7 @@
 title = "Xiangqi proverbs"
 date = 2020-05-11T14:06:35+08:00
 lastmod = 2020-05-11T14:06:35+08:00
-description = ""
+description = "The wisdom of xiangqi passed down through generations, crystallised in these proverbs."
 
 slug = ""
 variants = ["xiangqi"]

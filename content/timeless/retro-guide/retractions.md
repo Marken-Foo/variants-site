@@ -2,7 +2,7 @@
 title = "Retractions"
 date = 2020-05-29T15:23:56+08:00
 lastmod = 2020-05-29T15:23:56+08:00
-description = ""
+description = "Just your normal chess moves, but in reverse. Mastering retractions is essential for solving chess retro problems."
 
 slug = "retractions"
 variants = ["western"]

@@ -3,7 +3,7 @@ title = "G. Wilts 2010: First move of wK?"
 author = "Andrew Buchanan"
 date = 2020-06-08T16:53:23+08:00
 lastmod = 2020-06-08T16:53:23+08:00
-description = ""
+description = "A chess retro problem composed by Gerd Wilts and presented by problemist Andrew Buchanan, who walks us through the solution step by step."
 
 slug = "wilts-first-move-wK"
 variants = ["western"]

@@ -2,7 +2,7 @@
 title = "Xiangqi glossary"
 date = 2020-05-15T16:15:24+08:00
 lastmod = 2020-05-15T16:15:24+08:00
-description = ""
+description = "A glossary of commonly used xiangqi terms in English, with their original Chinese terms."
 
 slug = ""
 variants = ["xiangqi"]

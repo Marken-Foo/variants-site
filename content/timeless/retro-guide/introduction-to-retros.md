@@ -2,7 +2,7 @@
 title = "Introduction to retros"
 date = 2020-04-28T17:12:10+08:00
 lastmod = 2020-10-21T22:50:29+08:00
-description = ""
+description = "What is a chess retro problem? Start learning about this fascinating genre of logic puzzle here."
 
 slug = "introduction-to-retros"
 variants = ["western"]

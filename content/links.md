@@ -1,7 +1,7 @@
 +++
 title = "Links"
 date = 2020-04-17T23:29:43+08:00
-description = "Links to all kinds of useful sites."
+description = "Links to various sites and resources for chesses and their variants."
 
 type = "timeless"
 +++

@@ -2,7 +2,7 @@
 title = "The (CXA) xiangqi title system"
 date = 2020-05-22T18:25:03+08:00
 lastmod = 2020-05-22T18:25:03+08:00
-description = ""
+description = "What's the difference between a GM and a Master? Here's how the official CXA xiangqi title system works."
 
 slug = ""
 variants = ["xiangqi"]

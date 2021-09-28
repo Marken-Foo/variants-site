@@ -2,7 +2,7 @@
 title = "Your first retro problem"
 date = 2020-05-27T15:22:21+08:00
 lastmod = 2020-10-21T22:50:16+08:00
-description = ""
+description = "Solve your first chess retro problem, with guiding questions and hints if you need them."
 
 slug = "a-simple-problem"
 variants = ["western"]

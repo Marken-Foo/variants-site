@@ -2,7 +2,7 @@
 title = "Introduction to evaluating xiangqi positions"
 date = 2020-05-10T17:30:24+08:00
 lastmod = 2020-05-10T17:30:24+08:00
-description = ""
+description = "The three factors you need to evaluate a xiangqi position."
 
 slug = ""
 variants = ["xiangqi"]
